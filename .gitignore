@@ -1,0 +1,6 @@
+.*.sw*
+*.hi
+*.o
+.stack-work/
+_site/
+_cache/
