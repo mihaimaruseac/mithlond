@@ -1,2 +1,17 @@
+import Hakyll
+
+import GHC.IO.Encoding
+  (setLocaleEncoding, setForeignEncoding, utf8, setFileSystemEncoding)
+
 main :: IO ()
-main = putStrLn "OK"
+main = do
+  setLocaleEncoding utf8
+  setFileSystemEncoding utf8
+  setForeignEncoding utf8
+  hakyllWith siteConfiguration siteRules
+
+siteConfiguration :: Configuration
+siteConfiguration = undefined
+
+siteRules :: Rules ()
+siteRules = undefined
