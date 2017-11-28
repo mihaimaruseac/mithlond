@@ -9,9 +9,8 @@ The entry point of the site generator.
 -}
 
 import Hakyll
-
 import GHC.IO.Encoding
-  (setLocaleEncoding, setForeignEncoding, utf8, setFileSystemEncoding)
+  (setFileSystemEncoding, setForeignEncoding, setLocaleEncoding, utf8)
 
 import Rules
 
@@ -22,5 +21,6 @@ main = do
   setForeignEncoding utf8
   hakyllWith siteConfiguration siteRules
 
+-- | The configuration of the site
 siteConfiguration :: Configuration
 siteConfiguration = defaultConfiguration

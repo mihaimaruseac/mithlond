@@ -8,9 +8,10 @@ Portability: POSIX
 The rules used to generate various pages on the site.
 -}
 
-module Rules where
+module Rules (siteRules) where
 
 import Hakyll
 
+-- | The rules used to build the site
 siteRules :: Rules ()
 siteRules = undefined
