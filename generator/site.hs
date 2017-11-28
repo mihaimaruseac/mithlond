@@ -11,7 +11,7 @@ main = do
   hakyllWith siteConfiguration siteRules
 
 siteConfiguration :: Configuration
-siteConfiguration = undefined
+siteConfiguration = defaultConfiguration
 
 siteRules :: Rules ()
 siteRules = undefined
