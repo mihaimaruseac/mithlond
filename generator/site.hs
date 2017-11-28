@@ -3,6 +3,8 @@ import Hakyll
 import GHC.IO.Encoding
   (setLocaleEncoding, setForeignEncoding, utf8, setFileSystemEncoding)
 
+import Rules
+
 main :: IO ()
 main = do
   setLocaleEncoding utf8
@@ -12,6 +14,3 @@ main = do
 
 siteConfiguration :: Configuration
 siteConfiguration = defaultConfiguration
-
-siteRules :: Rules ()
-siteRules = undefined
