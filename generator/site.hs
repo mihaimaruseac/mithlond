@@ -8,9 +8,10 @@ Portability: POSIX
 The entry point of the site generator.
 -}
 
-import Hakyll
 import GHC.IO.Encoding
   (setFileSystemEncoding, setForeignEncoding, setLocaleEncoding, utf8)
+
+import Hakyll
 
 import Rules
 
