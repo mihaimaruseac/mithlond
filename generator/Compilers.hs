@@ -105,10 +105,12 @@ readExtensions = extensionsFromList
 
 writeOptions :: WriterOptions
 writeOptions = WriterOptions
-  { writerTemplate          = Nothing -- @loadAndApplyTemplate@ will add the template
+  { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
+    -- TODO: check what div type to use, reformat
+    writerTemplate          = Just "<div id=\"TOC\">$toc$</div>\n<div id=\"markdownBody\">$body$</div>"
   , writerVariables         = [] -- will be taken from context
   , writerTabStop           = 2 -- converting tabs to spaces
-  , writerTableOfContents   = False -- TODO
+  , writerTableOfContents   = True
   , writerIncremental       = False -- not for HTML blog posts
   , writerHTMLMathMethod    = PlainMath -- TODO
   , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
@@ -132,7 +134,7 @@ writeOptions = WriterOptions
   , writerEpubMetadata      = Nothing -- change not needed
   , writerEpubFonts         = [] -- change not needed
   , writerEpubChapterLevel  = 1 -- change not needed
-  , writerTOCDepth          = 3 -- TODO
+  , writerTOCDepth          = 3
   , writerReferenceDoc      = Nothing -- not needed for HTML output
   , writerReferenceLocation = EndOfDocument -- not needed for HTML output
   , writerSyntaxMap         = defaultSyntaxMap -- no need to change
