@@ -12,18 +12,43 @@ The rules used to generate various pages on the site.
 
 module Rules (siteRules) where
 
+-- TODO: restrict imports
+import Control.Applicative
+import Data.Maybe
+
 import Hakyll
 
 -- | The rules used to build the site
 siteRules :: Rules ()
 siteRules = do
-  -- match index.html
+  match "index.html" $ indexRules
   match "posts/*" $ postRules
   match "templates/*" $ compile templateCompiler
   match "css/*" $ cssRules
   match "javascript/*" $ idRules
   match "images/*" $ idRules
   match "fonts/*" $ idRules
+
+indexRules :: Rules ()
+indexRules = do
+  route idRoute
+  compile indexCompiler
+
+indexCompiler :: Compiler (Item String)
+indexCompiler =
+  getResourceBody >>=
+  applyAsTemplate indexCtx >>=
+  loadAndApplyTemplate "templates/default-chp.html" postCtxChp >>=
+  relativizeUrls
+  where
+    indexCtx = field "posts" $ \_ -> postList recentFirst
+
+postList :: ([Item String] -> Compiler [Item String]) -> Compiler String
+postList sortFilter = do
+  posts <- sortFilter =<< loadAll ("posts/*" .&&. hasNoVersion)
+  itemTpl <- loadBody "templates/post-item.html"
+  list <- applyTemplateList itemTpl postCtx posts
+  return list
 
 cssRules :: Rules ()
 cssRules = do
@@ -50,6 +75,44 @@ postCompiler =
 
 postCtx :: Context String
 postCtx = dateField "date" "%B %e, %Y" `mappend` defaultContext
+
+-- TODO: style, remove duplicates
+postCtxChp :: Context String
+postCtxChp = mconcat
+  [ sourceField "source"
+  , htmlTitleField
+  , dateField "date" "%F"
+  , bodyField "body"
+  , betterTitleField
+  , defaultContext
+  , constField "tags" ""
+  , missingField
+  ]
+
+-- TODO: style
+sourceField :: String -> Context String
+sourceField key = field key $ fmap (maybe empty (sourceUrl . toUrl)) . getRoute . itemIdentifier
+  where
+    sourceUrl xs = (take (length xs - 4) xs) ++ "md"
+
+-- TODO: style
+htmlTitleField :: Context String
+htmlTitleField = Context $ \k _ i -> 
+  if (k /= "htmltitle")
+  then do empty
+  else do value <- getMetadataField (itemIdentifier i) "title"
+          return $ StringField (if isNothing value then "" else fromJust value)
+
+-- TODO: style
+betterTitleField :: Context String
+betterTitleField = Context $ \k _ i -> 
+  if (k /= "title")
+  then do empty
+  else do value <- getMetadataField (itemIdentifier i) "title"
+          return $ StringField (mathdocInline $ if isNothing value then "" else fromJust value)
+  where
+    mathdocInline = id -- TODO
+
 
 postDataCtx :: Context String
 postDataCtx = mconcat [blogCtx, authorCtx, mathCtx, defaultContext]
