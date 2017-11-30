@@ -9,7 +9,7 @@ The entry point of the site generator.
 -}
 
 import GHC.IO.Encoding
-  (setFileSystemEncoding, setForeignEncoding, setLocaleEncoding, utf8)
+    (setFileSystemEncoding, setForeignEncoding, setLocaleEncoding, utf8)
 
 import Hakyll
 
