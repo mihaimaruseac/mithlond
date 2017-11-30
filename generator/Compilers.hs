@@ -25,17 +25,10 @@ indexCompiler :: Compiler (Item String)
 indexCompiler =
   getResourceBody >>=
   applyAsTemplate indexCtx >>=
-  loadAndApplyTemplate "templates/default-chp.html" postCtxChp >>=
+  loadAndApplyTemplate "templates/default-chp.html" postCtx >>=
   relativizeUrls
   where
     indexCtx = field "posts" $ \_ -> postList recentFirst
-
-postList :: ([Item String] -> Compiler [Item String]) -> Compiler String
-postList sortFilter = do
-  posts <- sortFilter =<< loadAll ("posts/*" .&&. hasNoVersion)
-  itemTpl <- loadBody "templates/post-item.html"
-  list <- applyTemplateList itemTpl postCtx posts
-  return list
 
 postCompiler :: Compiler (Item String)
 postCompiler =
@@ -45,46 +38,18 @@ postCompiler =
   loadAndApplyTemplate "templates/post-default.html" postDataCtx >>=
   relativizeUrls
 
-postCtx :: Context String
-postCtx = dateField "date" "%B %e, %Y" `mappend` defaultContext
-
 -- TODO: style, remove duplicates
-postCtxChp :: Context String
-postCtxChp = mconcat
+postCtx :: Context String
+postCtx = mconcat
   [ sourceField "source"
   , htmlTitleField
-  , dateField "date" "%F"
+  , dateField "date" "%B %e, %Y"
   , bodyField "body"
   , betterTitleField
   , defaultContext
   , constField "tags" ""
   , missingField
   ]
-
--- TODO: style
-sourceField :: String -> Context String
-sourceField key = field key $ fmap (maybe empty (sourceUrl . toUrl)) . getRoute . itemIdentifier
-  where
-    sourceUrl xs = (take (length xs - 4) xs) ++ "md"
-
--- TODO: style
-htmlTitleField :: Context String
-htmlTitleField = Context $ \k _ i ->
-  if (k /= "htmltitle")
-  then do empty
-  else do value <- getMetadataField (itemIdentifier i) "title"
-          return $ StringField (if isNothing value then "" else fromJust value)
-
--- TODO: style
-betterTitleField :: Context String
-betterTitleField = Context $ \k _ i ->
-  if (k /= "title")
-  then do empty
-  else do value <- getMetadataField (itemIdentifier i) "title"
-          return $ StringField (mathdocInline $ if isNothing value then "" else fromJust value)
-  where
-    mathdocInline = id -- TODO
-
 
 postDataCtx :: Context String
 postDataCtx = mconcat [blogCtx, authorCtx, mathCtx, defaultContext]
@@ -112,3 +77,34 @@ mathCtx = field "mathjax" $ \item -> do
   return $ case "mathjax" `lookupString` metadata of
     Just _ -> "<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>"
     Nothing -> ""
+
+postList :: ([Item String] -> Compiler [Item String]) -> Compiler String
+postList sortFilter = do
+  posts <- sortFilter =<< loadAll ("posts/*" .&&. hasNoVersion)
+  itemTpl <- loadBody "templates/post-item.html"
+  list <- applyTemplateList itemTpl postCtx posts
+  return list
+
+-- TODO: style
+sourceField :: String -> Context String
+sourceField key = field key $ fmap (maybe empty (sourceUrl . toUrl)) . getRoute . itemIdentifier
+  where
+    sourceUrl xs = (take (length xs - 4) xs) ++ "md"
+
+-- TODO: style
+htmlTitleField :: Context String
+htmlTitleField = Context $ \k _ i ->
+  if (k /= "htmltitle")
+  then do empty
+  else do value <- getMetadataField (itemIdentifier i) "title"
+          return $ StringField (if isNothing value then "" else fromJust value)
+
+-- TODO: style
+betterTitleField :: Context String
+betterTitleField = Context $ \k _ i ->
+  if (k /= "title")
+  then do empty
+  else do value <- getMetadataField (itemIdentifier i) "title"
+          return $ StringField (mathdocInline $ if isNothing value then "" else fromJust value)
+  where
+    mathdocInline = id -- TODO
