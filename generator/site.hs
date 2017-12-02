@@ -20,8 +20,4 @@ main = do
   setLocaleEncoding utf8
   setFileSystemEncoding utf8
   setForeignEncoding utf8
-  hakyllWith siteConfiguration siteRules
-
--- | The configuration of the site
-siteConfiguration :: Configuration
-siteConfiguration = defaultConfiguration
+  hakyll siteRules
