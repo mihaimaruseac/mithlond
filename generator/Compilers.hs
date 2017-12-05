@@ -10,5 +10,11 @@ The rules used to generate various pages on the site.
 
 {-# LANGUAGE OverloadedStrings #-}
 
-module Compilers () where
+module Compilers
+  ( postCompiler
+  ) where
 
+import Hakyll
+
+postCompiler :: Compiler (Item String)
+postCompiler = undefined

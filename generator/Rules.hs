@@ -14,6 +14,14 @@ module Rules (siteRules) where
 
 import Hakyll
 
+import Compilers
+
 -- | The rules used to build the site
 siteRules :: Rules ()
-siteRules = undefined
+siteRules =
+  match "posts/*" $ postRules
+
+postRules :: Rules ()
+postRules = do
+  route $ setExtension "html"
+  compile postCompiler
