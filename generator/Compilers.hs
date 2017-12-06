@@ -17,4 +17,6 @@ module Compilers
 import Hakyll
 
 postCompiler :: Compiler (Item String)
-postCompiler = getResourceString
+postCompiler = do
+  debugCompiler "string"
+  getResourceString
