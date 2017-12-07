@@ -18,5 +18,4 @@ import Hakyll
 
 postCompiler :: Compiler (Item String)
 postCompiler = do
-  debugCompiler "string"
   getResourceString
