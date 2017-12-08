@@ -18,4 +18,4 @@ import Hakyll
 
 postCompiler :: Compiler (Item String)
 postCompiler = do
-  getResourceString
+  pandocCompiler
