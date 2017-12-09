@@ -26,3 +26,4 @@ executable site
   build-depends:
       base
     , hakyll
+    , pandoc

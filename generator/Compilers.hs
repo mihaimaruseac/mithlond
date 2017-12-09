@@ -15,7 +15,13 @@ module Compilers
   ) where
 
 import Hakyll
+import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
 postCompiler = do
-  pandocCompiler
+  pandocCompilerWithTransformM defaultHakyllReaderOptions defaultHakyllWriterOptions f
+  where
+    f :: Pandoc -> Compiler Pandoc
+    f p = do
+      unsafeCompiler $ print p
+      return p
