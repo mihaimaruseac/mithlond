@@ -19,8 +19,11 @@ import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
 postCompiler = do
-  pandocCompilerWithTransformM ro wo f
+  b <- pandocCompilerWithTransformM ro wo f
+  applyTemplate (readTemplate templateString) context b
   where
+    context = missingField
+    templateString = "<html><body>Test</body></html>"
     ro = defaultHakyllReaderOptions
     wo = defaultHakyllWriterOptions
     f :: Pandoc -> Compiler Pandoc
