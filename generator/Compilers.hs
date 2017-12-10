@@ -19,8 +19,10 @@ import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
 postCompiler = do
-  pandocCompilerWithTransformM defaultHakyllReaderOptions defaultHakyllWriterOptions f
+  pandocCompilerWithTransformM ro wo f
   where
+    ro = defaultHakyllReaderOptions
+    wo = defaultHakyllWriterOptions
     f :: Pandoc -> Compiler Pandoc
     f p = do
       unsafeCompiler $ print p
