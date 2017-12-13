@@ -22,8 +22,8 @@ postCompiler = do
   b <- pandocCompilerWithTransformM ro wo f
   applyTemplate (readTemplate templateString) context b
   where
-    context = missingField
-    templateString = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>Test Ăsta</body></html>"
+    context = bodyField "body"
+    templateString = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>$body$</body></html>"
     ro = defaultHakyllReaderOptions
     wo = defaultHakyllWriterOptions
     f :: Pandoc -> Compiler Pandoc
