@@ -23,7 +23,7 @@ postCompiler = do
   applyTemplate (readTemplate templateString) context b
   where
     context = bodyField "body" `mappend` missingField
-    templateString = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>$body$<br/><hr/>$b$<hr/></body></html>"
+    templateString = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>$body$</body></html>"
     ro = defaultHakyllReaderOptions
     wo = defaultHakyllWriterOptions
     f :: Pandoc -> Compiler Pandoc
