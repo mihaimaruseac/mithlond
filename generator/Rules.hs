@@ -18,10 +18,16 @@ import Compilers
 
 -- | The rules used to build the site
 siteRules :: Rules ()
-siteRules =
+siteRules = do
   match "posts/*" $ postRules
+  match "templates/*" $ templateRules
 
 postRules :: Rules ()
 postRules = do
   route $ setExtension "html"
   compile postCompiler
+
+-- | Rules to compile templates
+-- Should just use the default, all is good.
+templateRules :: Rules ()
+templateRules = compile templateCompiler

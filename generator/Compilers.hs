@@ -20,7 +20,7 @@ import Text.Pandoc
 postCompiler :: Compiler (Item String)
 postCompiler = do
   b <- pandocCompilerWithTransformM readOptions writeOptions f
-  applyTemplate (readTemplate templateString) postContext b
+  loadAndApplyTemplate "templates/default.html" postContext b
   where
     f :: Pandoc -> Compiler Pandoc
     f p = do
@@ -38,6 +38,3 @@ postContext = mconcat
   [ bodyField "body"
   , missingField
   ]
-
-templateString :: String
-templateString = "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /></head><body>$body$</body></html>"
