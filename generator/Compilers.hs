@@ -14,6 +14,8 @@ module Compilers
   ( postCompiler
   ) where
 
+import qualified Data.Set as Set
+
 import Hakyll
 import Text.Pandoc
 
@@ -27,8 +29,23 @@ postCompiler = do
       unsafeCompiler $ print p
       return p
 
+-- | Explicitly set these up instead of relying on defaults to make sure we
+-- have full control and are immune to changes from upstream.
 readOptions :: ReaderOptions
-readOptions = defaultHakyllReaderOptions
+readOptions = ReaderOptions
+  { readerExtensions            = extensionsFromList readExtensions
+  , readerStandalone            = False
+  , readerColumns               = 80 -- TODO: check this
+  , readerTabStop               = 4 -- TODO: check this
+  , readerIndentedCodeClasses   = [] -- TODO: check this
+  , readerAbbreviations         = abbreviations
+  , readerDefaultImageExtension = ""
+  , readerTrackChanges          = AcceptChanges -- definitely not relevant
+  , readerStripComments         = False -- TODO: check this for minimizing output? check debug?
+  }
+  where
+    readExtensions = []
+    abbreviations = Set.empty
 
 writeOptions :: WriterOptions
 writeOptions = defaultHakyllWriterOptions

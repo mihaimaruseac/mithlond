@@ -25,5 +25,6 @@ executable site
     -funbox-strict-fields -funfolding-use-threshold=16 -rtsopts=all
   build-depends:
       base
+    , containers
     , hakyll
     , pandoc
