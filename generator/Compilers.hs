@@ -93,6 +93,8 @@ readExtensions = extensionsFromList
   , Ext_line_blocks
   , Ext_shortcut_reference_links
   , Ext_smart
+  , Ext_emoji -- allow emoji's of form :smile:
+  , Ext_tex_math_double_backslash -- allow display-style math with \\[..\\]
   ]
 
 writeOptions :: WriterOptions
