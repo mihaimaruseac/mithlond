@@ -184,6 +184,12 @@ Extra
 
 $\tuple{a, b, c}$
 
+Some more display math:
+
+\\[
+1 + 2 = 3
+\\]
+
 # Other links
 
 We can have <http://google.com> or <sam@green.eggs.ham>.
