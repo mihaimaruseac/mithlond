@@ -35,13 +35,13 @@ readOptions :: ReaderOptions
 readOptions = ReaderOptions
   { readerExtensions            = readExtensions
   , readerStandalone            = False
-  , readerColumns               = 80 -- TODO: check this
-  , readerTabStop               = 4 -- TODO: check this
-  , readerIndentedCodeClasses   = [] -- TODO: check this
+  , readerColumns               = 80 -- doesn't seem to have any effect
+  , readerTabStop               = 4  -- indentantion for code and continuations
+  , readerIndentedCodeClasses   = [] -- works only for code indented by a number of spaces
   , readerAbbreviations         = abbreviations
   , readerDefaultImageExtension = ""
   , readerTrackChanges          = AcceptChanges -- definitely not relevant
-  , readerStripComments         = False -- TODO: check this for minimizing output? check debug?
+  , readerStripComments         = False
   }
   where
     abbreviations = Set.empty
