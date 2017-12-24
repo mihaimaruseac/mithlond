@@ -43,8 +43,13 @@ readOptions = ReaderOptions
   , readerTrackChanges          = AcceptChanges -- definitely not relevant
   , readerStripComments         = False
   }
-  where
-    abbreviations = Set.empty
+
+abbreviations :: Set.Set String
+abbreviations = Set.fromList
+  [ "Mr.", "Mrs.", "Ms.", "Capt.", "Dr.", "Prof.", "Gen.", "Gov.", "e.g."
+  , "i.e.", "Sgt.", "St.", "vol.", "vs.", "Sen.", "Rep.", "Pres.", "Hon."
+  , "Rev.", "Ph.D.", "M.D.", "M.A.", "p.", "pp.", "ch.", "sec.", "cf.", "cp."
+  ]
 
 readExtensions :: Extensions
 readExtensions = extensionsFromList
