@@ -17,6 +17,7 @@ module Compilers
 import qualified Data.Set as Set
 
 import Hakyll
+import Skylighting hiding (Context)
 import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
@@ -103,7 +104,39 @@ readExtensions = extensionsFromList
   ]
 
 writeOptions :: WriterOptions
-writeOptions = defaultHakyllWriterOptions
+writeOptions = WriterOptions
+  { writerTemplate          = Nothing -- @loadAndApplyTemplate@ will add the template
+  , writerVariables         = [] -- will be taken from context
+  , writerTabStop           = 4 -- TODO
+  , writerTableOfContents   = False -- TODO
+  , writerIncremental       = False -- TODO
+  , writerHTMLMathMethod    = PlainMath -- TODO
+  , writerNumberSections    = False -- TODO
+  , writerNumberOffset      = [0,0,0,0,0,0] -- TODO
+  , writerSectionDivs       = False -- TODO
+  , writerExtensions        = emptyExtensions -- TODO
+  , writerReferenceLinks    = False -- TODO
+  , writerDpi               = 96
+  , writerWrapText          = WrapAuto
+  , writerColumns           = 72
+  , writerEmailObfuscation  = NoObfuscation -- TODO
+  , writerIdentifierPrefix  = "" -- TODO
+  , writerCiteMethod        = Citeproc -- TODO
+  , writerHtmlQTags         = False -- TODO
+  , writerSlideLevel        = Nothing -- change not needed
+  , writerTopLevelDivision  = TopLevelDefault -- change not needed
+  , writerListings          = False -- TODO
+  , writerHighlightStyle    = Just pygments -- TODO: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
+  , writerSetextHeaders     = True -- TODO
+  , writerEpubSubdirectory  = "EPUB" -- change not needed
+  , writerEpubMetadata      = Nothing -- change not needed
+  , writerEpubFonts         = [] -- change not needed
+  , writerEpubChapterLevel  = 1 -- change not needed
+  , writerTOCDepth          = 3 -- TODO
+  , writerReferenceDoc      = Nothing -- TODO
+  , writerReferenceLocation = EndOfDocument -- TODO
+  , writerSyntaxMap         = defaultSyntaxMap -- no need to change
+  }
 
 postContext :: Context String
 postContext = mconcat
