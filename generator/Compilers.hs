@@ -128,7 +128,9 @@ writeOptions = WriterOptions
   , writerSlideLevel        = Nothing -- change not needed
   , writerTopLevelDivision  = TopLevelDefault -- change not needed
   , writerListings          = False -- change relevant only for LaTeX
-  , writerHighlightStyle    = Just pygments -- TODO: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
+    -- TODO: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
+    -- TODO: check these after we have CSS?
+  , writerHighlightStyle    = Just pygments
   , writerSetextHeaders     = True -- change not relevant here
   , writerEpubSubdirectory  = "EPUB" -- change not needed
   , writerEpubMetadata      = Nothing -- change not needed
