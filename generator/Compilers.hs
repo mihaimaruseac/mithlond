@@ -34,7 +34,7 @@ postCompiler = do
 -- have full control and are immune to changes from upstream.
 readOptions :: ReaderOptions
 readOptions = ReaderOptions
-  { readerExtensions            = readExtensions
+  { readerExtensions            = mithlondExtensions
   , readerStandalone            = False
   , readerColumns               = 80 -- doesn't seem to have any effect
   , readerTabStop               = 4  -- indentation for code and continuations
@@ -52,8 +52,8 @@ abbreviations = Set.fromList
   , "Rev.", "Ph.D.", "M.D.", "M.A.", "p.", "pp.", "ch.", "sec.", "cf.", "cp."
   ]
 
-readExtensions :: Extensions
-readExtensions = extensionsFromList
+mithlondExtensions :: Extensions
+mithlondExtensions = extensionsFromList
   [ Ext_footnotes
   , Ext_inline_notes
   , Ext_pandoc_title_block
@@ -112,18 +112,18 @@ writeOptions = WriterOptions
   , writerTabStop           = 2 -- converting tabs to spaces
   , writerTableOfContents   = True
   , writerIncremental       = False -- not for HTML blog posts
-  , writerHTMLMathMethod    = PlainMath -- TODO
+  , writerHTMLMathMethod    = MathML -- seems to be the only one working, TODO: check more once all is done
   , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
   , writerNumberOffset      = [0,0,0,0,0,0] -- no need to start from other values
   , writerSectionDivs       = True -- wrap <h..> with <section>
-  , writerExtensions        = emptyExtensions -- TODO
+  , writerExtensions        = mithlondExtensions
   , writerReferenceLinks    = False -- not needed for HTML output
   , writerDpi               = 96
   , writerWrapText          = WrapAuto
   , writerColumns           = 72
   , writerEmailObfuscation  = ReferenceObfuscation
   , writerIdentifierPrefix  = "" -- useful when generating fragments, not here
-  , writerCiteMethod        = Citeproc -- TODO
+  , writerCiteMethod        = Citeproc -- change not needed
   , writerHtmlQTags         = True
   , writerSlideLevel        = Nothing -- change not needed
   , writerTopLevelDivision  = TopLevelDefault -- change not needed

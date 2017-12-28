@@ -187,7 +187,7 @@ $\tuple{a, b, c}$
 Some more display math:
 
 \\[
-1 + 2 = 3
+1 + 2 = \frac{3}{1} + \sqrt{\sin{\pi}}
 \\]
 
 # Other links
