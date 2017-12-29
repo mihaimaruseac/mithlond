@@ -19,7 +19,8 @@ import Compilers
 -- | The rules used to build the site
 siteRules :: Rules ()
 siteRules = do
-  match "posts/*" $ postRules
+  --match "posts/*" $ postRules
+  match (fromRegex "^posts/[0-9]+/main.md$") $ postRules
   match "templates/*" $ templateRules
 
 postRules :: Rules ()
