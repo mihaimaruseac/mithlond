@@ -1,7 +1,7 @@
 <div class="en">
-This is a test of the multilingual support.
+$partial("part1.en")$
 </div>
 
 <div class="ro">
-Ăsta e un test pentru suport multilingual.
+$partial("part1.ro")$
 </div>
