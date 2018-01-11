@@ -1,7 +1,7 @@
 {-|
 Module: Compilers
 Description: The rules used to generate various pages on the site.
-Copyright: (c) Mihai Maruseac 2017
+Copyright: (c) Mihai Maruseac 2018
 Stability: experimental
 Portability: POSIX
 

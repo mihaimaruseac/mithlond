@@ -1,7 +1,7 @@
 {-|
 Module: Main
 Description: The entry point of the site generator
-Copyright: (c) Mihai Maruseac 2017
+Copyright: (c) Mihai Maruseac 2018
 Stability: experimental
 Portability: POSIX
 
