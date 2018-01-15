@@ -21,9 +21,11 @@ import Skylighting hiding (Context)
 import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
-postCompiler = do
-  b <- pandocCompilerWithTransformM readOptions writeOptions f
-  loadAndApplyTemplate "templates/default.html" postContext b
+postCompiler =
+  pandocCompilerWithTransformM readOptions writeOptions f >>=
+  loadAndApplyTemplate "templates/post.html" postContext >>=
+  loadAndApplyTemplate "templates/default.html" postContext
+  -- TODO: check which one is the best ordering
   where
     f :: Pandoc -> Compiler Pandoc
     f p = do
