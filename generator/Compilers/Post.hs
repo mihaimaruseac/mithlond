@@ -150,5 +150,4 @@ writeOptions = WriterOptions
 postContext :: Context String
 postContext = mconcat
   [ bodyField "body"
-  , missingField
   ]
