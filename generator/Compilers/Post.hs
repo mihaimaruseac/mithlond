@@ -25,6 +25,7 @@ postCompiler =
   pandocCompilerWithTransformM readOptions writeOptions f >>=
   loadAndApplyTemplate "templates/post.html" postContext >>=
   loadAndApplyTemplate "templates/default.html" postContext
+  -- TODO: update post context(s) and see what needs to go in each one
   where
     f :: Pandoc -> Compiler Pandoc
     f p = do
