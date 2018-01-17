@@ -35,7 +35,8 @@ postCompiler =
 -- | The post context for the fields in @templates/post.html@.
 postContext :: Context String
 postContext = mconcat
-  [ bodyField "body"
+  [ titleField "title"
+  , bodyField "body"
   ]
 
 -- | Options for the parser of markdown posts
