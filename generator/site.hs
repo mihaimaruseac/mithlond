@@ -14,3 +14,4 @@ import Rules
 
 main :: IO ()
 main = hakyll siteRules
+-- TODO: validate HTML5 output, once pushed
