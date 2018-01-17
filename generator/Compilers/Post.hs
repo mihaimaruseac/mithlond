@@ -32,13 +32,15 @@ postCompiler =
       unsafeCompiler $ print p
       return p
 
+-- | The post context for the fields in @templates/post.html@.
 postContext :: Context String
 postContext = mconcat
   [ bodyField "body"
   ]
 
--- | Explicitly set these up instead of relying on defaults to make sure we
--- have full control and are immune to changes from upstream.
+-- | Options for the parser of markdown posts
+-- Explicitly set these up instead of relying on defaults to make sure we have
+-- full control and are immune to changes from upstream.
 readOptions :: ReaderOptions
 readOptions = ReaderOptions
   { readerExtensions            = mithlondExtensions
@@ -52,6 +54,9 @@ readOptions = ReaderOptions
   , readerStripComments         = False
   }
 
+-- | Abbreviations to acknowledge in the parser
+-- Explicitly set these up instead of relying on defaults to make sure we have
+-- full control and are immune to changes from upstream.
 abbreviations :: Set.Set String
 abbreviations = Set.fromList
   [ "Mr.", "Mrs.", "Ms.", "Capt.", "Dr.", "Prof.", "Gen.", "Gov.", "e.g."
@@ -59,6 +64,9 @@ abbreviations = Set.fromList
   , "Rev.", "Ph.D.", "M.D.", "M.A.", "p.", "pp.", "ch.", "sec.", "cf.", "cp."
   ]
 
+-- | Enabled extensions for the reader and the writer.
+-- Explicitly set these up instead of relying on defaults to make sure we have
+-- full control and are immune to changes from upstream.
 mithlondExtensions :: Extensions
 mithlondExtensions = extensionsFromList
   [ Ext_footnotes
@@ -110,6 +118,14 @@ mithlondExtensions = extensionsFromList
   , Ext_tex_math_double_backslash -- allow display-style math with \\[..\\]
   ]
 
+-- | Options for the HTML writer for each article
+-- We change at least the math format (@writerHTMLMathMethod@) and add support
+-- for table of contents (@writerTemplate@ and @writerTableOfContents@).
+-- Make sure to set code highlighting format (@writerHighlightStyle@).
+-- Also nice to have is email obfuscation (@writerEmailObfuscation@), wrapping
+-- sections on an extra <section> tag (for CSS styling, @writerSectionDivs@).
+-- Explicitly set all of the remaining ones instead of relying on defaults to
+-- make sure we have full control and are immune to changes from upstream.
 writeOptions :: WriterOptions
 writeOptions = WriterOptions
   { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
