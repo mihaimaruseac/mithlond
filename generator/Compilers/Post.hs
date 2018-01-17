@@ -32,6 +32,11 @@ postCompiler =
       unsafeCompiler $ print p
       return p
 
+postContext :: Context String
+postContext = mconcat
+  [ bodyField "body"
+  ]
+
 -- | Explicitly set these up instead of relying on defaults to make sure we
 -- have full control and are immune to changes from upstream.
 readOptions :: ReaderOptions
@@ -146,8 +151,3 @@ writeOptions = WriterOptions
   where
     -- the HTML template used to show a post's table of contents
     tocHTML = "<div id=\"post-TOC\">$toc$</div><div id=\"post-body\">$body$</div>"
-
-postContext :: Context String
-postContext = mconcat
-  [ bodyField "body"
-  ]
