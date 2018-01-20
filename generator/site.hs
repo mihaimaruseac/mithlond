@@ -17,3 +17,5 @@ main = hakyll siteRules
 -- TODO: validate HTML5 output, once pushed
 -- TODO: in site's footer add link to a README which explains blog's
 -- technology and is online accessible
+-- TODO: in site's footer: Source available on <a href=TODO>GitHub</a> together with <a href=TODO>copyright</a>.
+-- TODO: choose one of the above
