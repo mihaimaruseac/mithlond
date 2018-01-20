@@ -15,3 +15,5 @@ import Rules
 main :: IO ()
 main = hakyll siteRules
 -- TODO: validate HTML5 output, once pushed
+-- TODO: in site's footer add link to a README which explains blog's
+-- technology and is online accessible
