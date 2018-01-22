@@ -22,6 +22,8 @@ siteRules = do
   match (fromRegex "^posts/-?[0-9]+/.*\\.md$") $ postRules
   match "templates/*" $ templateRules
 
+-- | Rules to compile an individual blog post
+-- The meat of the blog, after all.
 postRules :: Rules ()
 postRules = do
   route $ setExtension "html"
