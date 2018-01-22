@@ -26,6 +26,7 @@ postCompiler =
   loadAndApplyTemplate "templates/post.html" postContext >>=
   loadAndApplyTemplate "templates/default.html" postContext
   -- TODO: update post context(s) and see what needs to go in each one
+  -- TODO: see if we still need the transform
   where
     f :: Pandoc -> Compiler Pandoc
     f p = do
