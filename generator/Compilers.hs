@@ -10,6 +10,13 @@ The compilers used to generate various pages on the site.
 
 module Compilers
   ( postCompiler
+  , indexCompiler
   ) where
 
+import Hakyll
+
 import Compilers.Post (postCompiler)
+
+-- | The compiler for the index page
+indexCompiler :: Compiler (Item String)
+indexCompiler = getResourceBody
