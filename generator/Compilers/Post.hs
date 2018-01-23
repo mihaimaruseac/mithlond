@@ -12,6 +12,7 @@ Definitions and compiler for posts
 
 module Compilers.Post
   ( postCompiler
+  , postContext
   ) where
 
 import qualified Data.Set as Set
