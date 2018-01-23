@@ -1,3 +1,8 @@
 <table class="post-index">
-$posts$
+  $for(posts)$
+    <tr>
+        <td><a href="$url$">$title$</a></td>
+        <td class="right"><time>$date$</time></td>
+    </tr>
+  $endfor$
 </table>
