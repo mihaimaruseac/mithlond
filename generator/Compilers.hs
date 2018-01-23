@@ -8,6 +8,8 @@ Portability: POSIX
 The compilers used to generate various pages on the site.
 -}
 
+{-# LANGUAGE OverloadedStrings #-}
+
 module Compilers
   ( postCompiler
   , indexCompiler
@@ -15,8 +17,19 @@ module Compilers
 
 import Hakyll
 
-import Compilers.Post (postCompiler)
+import Compilers.Post (postCompiler, postContext)
 
 -- | The compiler for the index page
 indexCompiler :: Compiler (Item String)
-indexCompiler = getResourceBody
+indexCompiler = getResourceBody >>=
+  loadAndApplyTemplate "templates/default.html" indexContext
+
+-- | The context containing the metadata used to fill in the index page
+indexContext :: Context String
+indexContext =
+  listField "posts" postContext compilePostList `mappend` postContext
+
+-- | Compile the list of posts to show on the index
+-- Needs to load all posts and sort them and extract the relevant context
+compilePostList :: Compiler [Item String]
+compilePostList = loadAll (fromRegex "^posts/-?[0-9]+/.*\\.md$")
