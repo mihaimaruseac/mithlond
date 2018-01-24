@@ -18,6 +18,7 @@ module Compilers
 import Hakyll
 
 import Compilers.Post (postCompiler, postContext)
+import Patterns (patternPosts)
 
 -- | The compiler for the index page
 indexCompiler :: Compiler (Item String)
@@ -34,4 +35,4 @@ indexContext =
 -- TODO: see if we can generate HTML snippets for each post and load only
 -- those instead of generating the entire post (see @Hakyll.Web.Template.List@)
 compilePostList :: Compiler [Item String]
-compilePostList = loadAll (fromRegex "^posts/-?[0-9]+/.*\\.md$")
+compilePostList = loadAll patternPosts
