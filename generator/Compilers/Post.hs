@@ -38,6 +38,8 @@ postCompiler =
 postContext :: Context String
 postContext = mconcat
   [ titleField "title"
+  , urlField "url"
+  , dateField "date" "%F"
   , bodyField "body"
   ]
 
