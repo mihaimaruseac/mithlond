@@ -1,3 +1,7 @@
+---
+date: 2018-01-25
+---
+
 ##### Section {#section-en .en display=none -}
 
 This is a test of the multilingual support.
