@@ -23,6 +23,7 @@ import Patterns (patternPosts)
 -- | The compiler for the index page
 indexCompiler :: Compiler (Item String)
 indexCompiler = getResourceBody >>=
+  applyAsTemplate indexContext >>=
   loadAndApplyTemplate "templates/default.html" indexContext
 
 -- | The context containing the metadata used to fill in the index page
