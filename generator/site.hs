@@ -19,3 +19,5 @@ main = hakyll siteRules
 -- technology and is online accessible
 -- TODO: in site's footer: Source available on <a href=TODO>GitHub</a> together with <a href=TODO>copyright</a>.
 -- TODO: choose one of the above
+-- TODO: change stability
+-- TODO: new domain, new name, move repo
