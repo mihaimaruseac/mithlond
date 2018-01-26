@@ -18,6 +18,7 @@ executable site
   main-is: site.hs
   other-modules:
       Compilers
+    , Compilers.Index
     , Compilers.Post
     , Patterns
     , Rules
