@@ -28,7 +28,7 @@ siteRules = do
 -- The meat of the blog, after all.
 postRules :: Rules ()
 postRules = do
-  route $ setExtension "html"
+  route $ setExtension "html" `composeRoutes` gsubRoute "posts/" (const "")
   compile postCompiler
 
 -- | Rules to compile templates
