@@ -29,6 +29,7 @@ siteRules = do
 postRules :: Rules ()
 postRules = do
   route $ setExtension "html" `composeRoutes` gsubRoute "posts/" (const "")
+  -- TODO: investigate using metadataRoute to not have to do rewrites
   compile postCompiler
 
 -- | Rules to compile templates
