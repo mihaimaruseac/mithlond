@@ -8,12 +8,15 @@ Portability: POSIX
 Definitions and compiler for posts
 -}
 
+{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Compilers.Post
   ( postCompiler
   , postContext
   ) where
+
+import Control.Applicative (empty)
 
 import qualified Data.Set as Set
 
@@ -37,11 +40,24 @@ postCompiler =
 -- | The post context for the fields in @templates/post.html@.
 postContext :: Context String
 postContext = mconcat
-  [ titleField "title"
+  [ postTitleField
   , urlField "url"
   , dateField "date" "%F"
   , bodyField "body"
   ]
+
+-- | Title field for the post metadata.
+-- The default @titleField@ returns only the name of the file which is not
+-- what we want.
+-- The current implementation requires titles to be set explicitly but that's
+-- what we want.
+postTitleField :: Context String
+postTitleField = Context $ \case
+  "title" -> \_ -> getTitle
+  _ -> \_ _ -> empty
+  where
+    getTitle i = StringField . maybe empty id <$>
+      getMetadataField (itemIdentifier i) "title"
 
 -- | Options for the parser of markdown posts
 -- Explicitly set these up instead of relying on defaults to make sure we have
