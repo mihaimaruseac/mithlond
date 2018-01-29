@@ -28,9 +28,15 @@ siteRules = do
 -- The meat of the blog, after all.
 postRules :: Rules ()
 postRules = do
-  route $ setExtension "html" `composeRoutes` gsubRoute "posts/" (const "")
-  -- TODO: investigate using metadataRoute to not have to do rewrites
+  route $ metadataRoute routeDef
   compile postCompiler
+  where
+    -- if postid is found, we route to $it/index.html
+    -- otherwise, just change extension to allow the possibility of
+    -- posts not reachable from the index
+    routeDef m = case lookupString "postid" m of
+      Just id' -> constRoute $ id' `mappend` "/index.html"
+      Nothing -> setExtension "html"
 
 -- | Rules to compile templates
 -- Should just use the default, all is good.
