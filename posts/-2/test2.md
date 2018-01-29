@@ -1,6 +1,7 @@
 ---
 date: 2018-01-15
 title: The oldest post
+postid: -2
 ---
 
 # Description
