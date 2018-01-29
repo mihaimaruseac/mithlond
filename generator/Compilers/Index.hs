@@ -9,10 +9,14 @@ Definitions and compiler for the index page
 -}
 
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 
 module Compilers.Index
   ( indexCompiler
   ) where
+
+import Data.List (sortBy)
+import Data.Ord (comparing)
 
 import Hakyll
 
@@ -35,4 +39,16 @@ indexContext =
 -- TODO: see if we can generate HTML snippets for each post and load only
 -- those instead of generating the entire post (see @Hakyll.Web.Template.List@)
 compilePostList :: Compiler [Item String]
-compilePostList = loadAll patternPosts
+compilePostList = loadAll patternPosts >>= sortById
+
+-- | Sort the posts in decreasing order based on their ID
+sortById :: forall m a . MonadMetadata m => [Item a] -> m [Item a]
+sortById = fmap (map snd . sortBy (comparing fst)) . mapM prepare
+  where
+    prepare :: Item a -> m (Int, Item a)
+    prepare i = do
+      metadata <- fmap reads <$> getMetadataField (itemIdentifier i) "postid"
+      case metadata of
+        Just [(id'', "")] -> return (id'', i)
+        Just _  -> fail "Failed to parse the $postid$ field of a post"
+        Nothing -> fail "Found a post with missing $postid$ field"
