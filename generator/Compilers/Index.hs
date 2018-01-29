@@ -16,6 +16,7 @@ module Compilers.Index
   ) where
 
 import Data.List (sortBy)
+import Data.Maybe (catMaybes)
 import Data.Ord (comparing)
 
 import Hakyll
@@ -42,13 +43,15 @@ compilePostList :: Compiler [Item String]
 compilePostList = loadAll patternPosts >>= sortById
 
 -- | Sort the posts in decreasing order based on their ID
+-- We just skip posts which don't have a $postid$ field or the field cannot be
+-- parsed to an integer (allowing us to have drafts that don't show up in
+-- index).
 sortById :: forall m a . MonadMetadata m => [Item a] -> m [Item a]
-sortById = fmap (map snd . sortBy (comparing fst)) . mapM prepare
+sortById = fmap (map snd . sortBy (comparing fst) . catMaybes) . mapM prepare
   where
-    prepare :: Item a -> m (Int, Item a)
+    prepare :: Item a -> m (Maybe (Int, Item a))
     prepare i = do
       metadata <- fmap reads <$> getMetadataField (itemIdentifier i) "postid"
       case metadata of
-        Just [(id'', "")] -> return (id'', i)
-        Just _  -> fail "Failed to parse the $postid$ field of a post"
-        Nothing -> fail "Found a post with missing $postid$ field"
+        Just [(id'', "")] -> return $ Just (id'', i)
+        _ -> return Nothing
