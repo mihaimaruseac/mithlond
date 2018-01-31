@@ -20,9 +20,9 @@ import Patterns
 -- | The rules used to build the site
 siteRules :: Rules ()
 siteRules = do
+  match patternIndex indexRules
   match patternPosts postRules
   match patternTemplates templateRules
-  match patternIndex indexRules
 
 -- | Rules to compile an individual blog post
 -- The meat of the blog, after all.
