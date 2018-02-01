@@ -23,6 +23,7 @@ siteRules = do
   match patternIndex indexRules
   match patternPosts postRules
   match patternTemplates templateRules
+  match patternCSS cssRules
 
 -- | Rules to compile an individual blog post
 -- The meat of the blog, after all.
@@ -50,3 +51,10 @@ indexRules :: Rules()
 indexRules = do
   route idRoute
   compile indexCompiler
+
+-- | Rules to compile CSS
+-- Default route and compress CSS
+cssRules :: Rules ()
+cssRules = do
+  route idRoute
+  compile compressCssCompiler

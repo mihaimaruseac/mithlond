@@ -24,3 +24,6 @@ patternTemplates = "templates/*"
 
 patternIndex :: Pattern
 patternIndex = "index.html"
+
+patternCSS :: Pattern
+patternCSS = "css/*"
