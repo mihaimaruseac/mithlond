@@ -16,14 +16,14 @@ module Patterns where
 
 import Hakyll
 
+patternIndex :: Pattern
+patternIndex = "index.html"
+
 patternPosts :: Pattern
 patternPosts = fromRegex "^posts/-?[0-9]+/.*\\.md$"
 
 patternTemplates :: Pattern
 patternTemplates = "templates/*"
-
-patternIndex :: Pattern
-patternIndex = "index.html"
 
 patternCSS :: Pattern
 patternCSS = "css/*"

@@ -25,6 +25,14 @@ siteRules = do
   match patternTemplates templateRules
   match patternCSS cssRules
 
+-- | Rules for the index page
+-- Should display links to all of the articles, in a nice tabular format
+-- TODO: investigate other display options
+indexRules :: Rules ()
+indexRules = do
+  route idRoute
+  compile indexCompiler
+
 -- | Rules to compile an individual blog post
 -- The meat of the blog, after all.
 postRules :: Rules ()
@@ -43,14 +51,6 @@ postRules = do
 -- Should just use the default, all is good.
 templateRules :: Rules ()
 templateRules = compile templateCompiler
-
--- | Rules for the index page
--- Should display links to all of the articles, in a nice tabular format
--- TODO: investigate other display options
-indexRules :: Rules ()
-indexRules = do
-  route idRoute
-  compile indexCompiler
 
 -- | Rules to compile CSS
 -- Default route and compress CSS
