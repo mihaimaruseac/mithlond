@@ -1,8 +1,10 @@
-<table class="post-index">
-  $for(posts)$
-    <tr>
-        <td><a href="$url$">$title$</a></td>
-        <td class="right"><time>$date$</time></td>
-    </tr>
-  $endfor$
-</table>
+<article>
+  <table class="post-index">
+    $for(posts)$
+      <tr>
+          <td><a href="$url$">$title$</a></td>
+          <td class="right"><time>$date$</time></td>
+      </tr>
+    $endfor$
+  </table>
+</article>
