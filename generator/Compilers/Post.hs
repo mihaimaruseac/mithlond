@@ -187,4 +187,4 @@ writeOptions = WriterOptions
   }
   where
     -- the HTML template used to show a post's table of contents
-    tocHTML = "<section>$toc$</section><article>$body$</article>"
+    tocHTML = "<div id=\"post-TOC\">$toc$</div><div id=\"post-body\">$body$</div>"
