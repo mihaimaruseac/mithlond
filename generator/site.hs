@@ -21,3 +21,4 @@ main = hakyll siteRules
 -- TODO: choose one of the above
 -- TODO: change stability
 -- TODO: new domain, new name, move repo
+-- TODO: HTML5 doctor
