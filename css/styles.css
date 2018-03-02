@@ -1,3 +1,32 @@
+body {
+  display: grid;
+  grid-template: auto / 1fr auto 1fr;
+  grid-template-areas:
+    ". header ."
+    ". main   ."
+    ". footer .";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
+header, footer, main, article {
+  border: 1px solid blue;
+}
+
+body > header, body > footer, main {
+  border: 1px solid red;
+}
+
 //html {
 //    height: 100%;
 //    max-height: 100%;
