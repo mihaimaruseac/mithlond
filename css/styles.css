@@ -1,19 +1,22 @@
 body {
   display: grid;
   grid-template: auto / 1fr auto 1fr;
+  grid-template-areas:
+    ". header ."
+    ". main   ."
+    ". footer .";
 }
 
 .site-header {
-  grid-column: 2 / 3;
+  grid-area: header;
 }
 
 .site-main {
-  grid-column: 2 / 3;
+  grid-area: main;
 }
 
 .site-footer {
-  grid-column: 2 / 3;
-  grid-row: -1 / 0;
+  grid-area: footer;
 }
 
 header, footer, main, article {
