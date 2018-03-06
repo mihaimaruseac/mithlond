@@ -151,7 +151,7 @@ writeOptions :: WriterOptions
 writeOptions = WriterOptions
   { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
     -- TODO: check what div type to use, reformat
-    writerTemplate          = Just tocHTML
+    writerTemplate          = Nothing --Just tocHTML
   , writerVariables         = [] -- will be taken from context
   , writerTabStop           = 2 -- converting tabs to spaces
   , writerTableOfContents   = True
@@ -185,6 +185,8 @@ writeOptions = WriterOptions
   , writerReferenceLocation = EndOfDocument -- not needed for HTML output
   , writerSyntaxMap         = defaultSyntaxMap -- no need to change
   }
+  {-
   where
     -- the HTML template used to show a post's table of contents
     tocHTML = "<div id=\"post-TOC\">$toc$</div><div id=\"post-body\">$body$</div>"
+  -}
