@@ -21,6 +21,11 @@ body {
   text-align: center;
 }
 
+article {
+  min-width: 80em;
+  max-width: 100em;
+}
+
 header, footer, main, article {
   border: 1px solid blue;
 }
