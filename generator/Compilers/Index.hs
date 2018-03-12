@@ -15,9 +15,8 @@ module Compilers.Index
   ( indexCompiler
   ) where
 
-import Data.List (sortBy)
+import Data.List (sortOn)
 import Data.Maybe (catMaybes)
-import Data.Ord (comparing)
 
 import Hakyll
 
@@ -47,7 +46,7 @@ compilePostList = loadAll patternPosts >>= sortById
 -- parsed to an integer (allowing us to have drafts that don't show up in
 -- index).
 sortById :: forall m a . MonadMetadata m => [Item a] -> m [Item a]
-sortById = fmap (map snd . sortBy (comparing fst) . catMaybes) . mapM prepare
+sortById = fmap (map snd . sortOn fst . catMaybes) . mapM prepare
   where
     prepare :: Item a -> m (Maybe (Int, Item a))
     prepare i = do
