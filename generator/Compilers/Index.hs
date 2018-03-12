@@ -52,5 +52,5 @@ sortById = fmap (map snd . sortOn fst . catMaybes) . mapM prepare
     prepare i = do
       metadata <- fmap reads <$> getMetadataField (itemIdentifier i) "postid"
       case metadata of
-        Just [(id'', "")] -> return $ Just (-id'', i)
+        Just [(id', "")] -> return $ Just (-id', i)
         _ -> return Nothing
