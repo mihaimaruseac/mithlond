@@ -26,10 +26,10 @@ article {
   max-width: 100em;
 }
 
-header, footer, main, article {
-  border: 1px solid blue;
-}
+//header, footer, main, article {
+//  border: 1px solid blue;
+//}
 
-body > header, body > footer, main {
-  border: 1px solid red;
-}
+//body > header, body > footer, main {
+//  border: 1px solid red;
+//}
