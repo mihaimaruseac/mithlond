@@ -23,13 +23,10 @@ body {
 }
 
 .content {
+  min-width: 80em;
+  max-width: 100em;
   background-color: #fff;
 }
-
-//article {
-//  min-width: 80em;
-//  max-width: 100em;
-//}
 
 //header, footer, main, article {
 //  border: 1px solid blue;
