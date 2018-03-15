@@ -11,24 +11,25 @@ body {
 .site-header {
   grid-area: header;
   text-align: center;
-  background-color: #fff;
 }
 
 .site-main {
   grid-area: main;
-  background-color: #fff;
 }
 
 .site-footer {
   grid-area: footer;
   text-align: center;
+}
+
+.content {
   background-color: #fff;
 }
 
-article {
-  min-width: 80em;
-  max-width: 100em;
-}
+//article {
+//  min-width: 80em;
+//  max-width: 100em;
+//}
 
 //header, footer, main, article {
 //  border: 1px solid blue;
