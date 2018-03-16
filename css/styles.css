@@ -5,7 +5,7 @@ body {
     ". header ."
     ". main   ."
     ". footer .";
-  background-color: #aeaeae;
+  background-color: #dedede;
 }
 
 .site-header {
@@ -23,9 +23,10 @@ body {
 }
 
 .content {
+  background-color: #fff;
+  box-shadow: 0 0 12px 1px rgba(42, 42, 42, 0.2);
   min-width: 80em;
   max-width: 100em;
-  background-color: #fff;
 }
 
 //header, footer, main, article {
