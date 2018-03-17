@@ -5,6 +5,7 @@ body {
     ". header ."
     ". main   ."
     ". footer .";
+  grid-row-gap: 15px;
   background-color: #dedede;
 }
 
