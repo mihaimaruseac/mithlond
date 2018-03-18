@@ -26,6 +26,7 @@ body {
 .content {
   background-color: #fff;
   box-shadow: 0 0 12px 1px rgba(42, 42, 42, 0.2);
+  padding: 1em 2em;
   min-width: 80em;
   max-width: 100em;
 }
