@@ -22,3 +22,4 @@ main = hakyll siteRules
 -- TODO: change stability
 -- TODO: new domain, new name, move repo
 -- TODO: HTML5 doctor
+-- TODO: check responsiveness and disable paddings for small screens
