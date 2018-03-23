@@ -25,6 +25,7 @@ body {
 
 .site-main {
   grid-area: main;
+  text-align: justify;
 }
 
 .site-footer {
