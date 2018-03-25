@@ -33,14 +33,14 @@ body {
   text-align: center;
 }
 
-.site-header > h1 {
-  font: 62.5% Palatino, "Times New Roman", serif;
-  font-size: 100%;
-  font-weight: 400;
-  font-variant: small-caps;
-  letter-spacing: .05em;
-  word-spacing: .2em;
-}
+//.site-header > h1 {
+//  font: 62.5% Palatino, "Times New Roman", serif;
+//  font-size: 100%;
+//  font-weight: 400;
+//  font-variant: small-caps;
+//  letter-spacing: .05em;
+//  word-spacing: .2em;
+//}
 
 //header, footer, main, article {
 //  border: 1px solid blue;
