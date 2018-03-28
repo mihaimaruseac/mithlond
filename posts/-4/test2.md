@@ -13,16 +13,7 @@ article contents. This is a test to see the layout of blog article contents.
 This is a test to see the layout of blog article contents. This is a test to
 see the layout of blog article contents. This is a test to see the layout of
 blog article contents. This is a test to see the layout of blog article
-contents. This is a test to see the layout of blog article contents. This is a
-test to see the layout of blog article contents. This is a test to see the
-layout of blog article contents. This is a test to see the layout of blog
-article contents. This is a test to see the layout of blog article contents.
-This is a test to see the layout of blog article contents. This is a test to
-see the layout of blog article contents. This is a test to see the layout of
-blog article contents. This is a test to see the layout of blog article
-contents. This is a test to see the layout of blog article contents. This is a
-test to see the layout of blog article contents. This is a test to see the
-layout of blog article contents.
+contents. This is a test to see the layout of blog article contents.
 
 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
