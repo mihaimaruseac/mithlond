@@ -12,6 +12,18 @@ body {
     ". footer .";
   grid-row-gap: 15px;
   background-color: #dedede;
+  //font-family: 'Alegreya', 'Helvetica', serif;
+  //font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+  //font-family: 'Alegreya Sans SC', 'Helvetica', sans-serif;
+  //font-family: 'Alegreya SC', 'Helvetica', serif;
+  //font-family: 'Cormorant', 'Helvetica', serif;
+  //font-family: 'Cormorant Garamond', 'Helvetica', serif;
+  //font-family: 'Cormorant Infant', 'Helvetica', serif;
+  //font-family: 'Cormorant SC', 'Helvetica', serif;
+  //font-family: 'Cormorant Unicase', 'Helvetica', serif;
+  //font-family: 'Cormorant Upright', 'Helvetica', serif;
+  //font-family: 'Computer Modern', 'Helvetica', serif;
+  font-size: 1.3rem;
 }
 
 .content {
