@@ -28,3 +28,5 @@ asdfghjklqwertyuiopzxcvbnm
 ffi all afi
 
 q; asd. Alo 'we' "wee"
+
+checking special chars: ășârț€ęė
