@@ -27,3 +27,6 @@ patternTemplates = "templates/*"
 
 patternCSS :: Pattern
 patternCSS = "css/*"
+
+patternFonts :: Pattern
+patternFonts = "fonts/*"

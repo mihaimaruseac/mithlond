@@ -24,6 +24,7 @@ siteRules = do
   match patternPosts postRules
   match patternTemplates templateRules
   match patternCSS cssRules
+  match patternFonts fontRules
 
 -- | Rules for the index page
 -- Should display links to all of the articles, in a nice tabular format
@@ -58,3 +59,10 @@ cssRules :: Rules ()
 cssRules = do
   route idRoute
   compile compressCssCompiler
+
+-- | Rules to compile custom fonts
+-- Default route and compress custom fonts
+fontRules :: Rules ()
+fontRules = do
+  route idRoute
+  compile copyFileCompiler
