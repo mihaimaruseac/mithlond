@@ -29,4 +29,4 @@ patternCSS :: Pattern
 patternCSS = "css/*"
 
 patternFonts :: Pattern
-patternFonts = "fonts/*"
+patternFonts = "fonts/*.woff"
