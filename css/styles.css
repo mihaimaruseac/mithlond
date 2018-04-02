@@ -12,6 +12,7 @@ body {
     ". footer .";
   grid-row-gap: 15px;
   background-color: #dedede;
+  font-family: 'TEST', 'Helvetica', serif;
   //font-family: 'Alegreya', 'Helvetica', serif;
   //font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
   //font-family: 'Alegreya Sans SC', 'Helvetica', sans-serif;
@@ -43,6 +44,7 @@ body {
 .site-main {
   grid-area: main;
   text-align: justify;
+  //font-family: 'Helvetica';
 }
 
 .site-footer {
