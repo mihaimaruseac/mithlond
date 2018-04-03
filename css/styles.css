@@ -25,6 +25,7 @@ body {
   //font-family: 'Cormorant Upright', 'Helvetica', serif;
   //font-family: 'Computer Modern', 'Helvetica', serif;
   font-size: 1.3rem;
+  hyphens: auto;
 }
 
 .content {
