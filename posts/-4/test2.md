@@ -25,6 +25,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 asdfghjklqwertyuiopzxcvbnm
 
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd
+
 ffi all afi
 
 q; asd. Alo 'we' "wee"
