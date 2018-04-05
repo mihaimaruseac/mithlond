@@ -50,6 +50,14 @@ body {
   text-align: center;
 }
 
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
 //.site-header > h1 {
 //  font: 62.5% Palatino, "Times New Roman", serif;
 //  font-size: 100%;
