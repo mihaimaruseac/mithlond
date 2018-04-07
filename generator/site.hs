@@ -23,3 +23,5 @@ main = hakyll siteRules
 -- TODO: new domain, new name, move repo
 -- TODO: HTML5 doctor
 -- TODO: check responsiveness and disable paddings for small screens
+-- TODO: for responsiveness should also change point size to still keep same alphabet size on a line of text
+-- TODO: handle overflow
