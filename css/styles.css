@@ -11,45 +11,42 @@ body {
     ". main   ."
     ". footer .";
   grid-row-gap: 15px;
+
   background-color: #dedede;
-  font-family: 'TEST', 'Helvetica', serif;
-  //font-family: 'Alegreya', 'Helvetica', serif;
-  //font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
-  //font-family: 'Alegreya Sans SC', 'Helvetica', sans-serif;
-  //font-family: 'Alegreya SC', 'Helvetica', serif;
-  //font-family: 'Cormorant', 'Helvetica', serif;
-  //font-family: 'Cormorant Garamond', 'Helvetica', serif;
-  //font-family: 'Cormorant Infant', 'Helvetica', serif;
-  //font-family: 'Cormorant SC', 'Helvetica', serif;
-  //font-family: 'Cormorant Unicase', 'Helvetica', serif;
-  //font-family: 'Cormorant Upright', 'Helvetica', serif;
-  //font-family: 'Computer Modern', 'Helvetica', serif;
-  font-size: 1.3rem;
+
+  font-family: 'Cormorant', serif;
+  font-size: 25px;
+  line-height: 35px;
+  font-synthesis: none;
+  font-weight: 300;
   hyphens: auto;
 }
 
 .content {
   background-color: #fff;
+
   box-shadow: 0 0 12px 1px rgba(42, 42, 42, 0.2);
   padding: 1em 2em;
   margin: 0em 2em;
   border-radius: 10px;
-  width: 80em;
+  width: 50em;
 }
 
 .site-header {
   grid-area: header;
+
   text-align: center;
 }
 
 .site-main {
   grid-area: main;
+
   text-align: justify;
-  //font-family: 'Helvetica';
 }
 
 .site-footer {
   grid-area: footer;
+
   text-align: center;
 }
 
@@ -60,12 +57,4 @@ body {
 //  font-variant: small-caps;
 //  letter-spacing: .05em;
 //  word-spacing: .2em;
-//}
-
-//header, footer, main, article {
-//  border: 1px solid blue;
-//}
-
-//body > header, body > footer, main {
-//  border: 1px solid red;
 //}
