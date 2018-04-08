@@ -27,6 +27,8 @@ asdfghjklqwertyuiopzxcvbnm
 
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd
 
+ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCD
+
 ffi all afi
 
 q; asd. Alo 'we' "wee"
