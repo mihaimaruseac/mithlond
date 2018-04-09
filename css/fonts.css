@@ -37,9 +37,9 @@
 @font-face {
   font-family: 'Cormorant';
   src: url('../fonts/CormorantGaramond-SemiBold-webfont.woff') format('woff');
-  src: url('../fonts/CormorantSC-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/CormorantInfant-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-SemiBold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUnicase-Semibold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-SemiBold-webfont.woff') format('woff');
   font-style: normal;
@@ -48,9 +48,9 @@
 
 @font-face {
   font-family: 'Cormorant';
-  src: url('../fonts/Cormorant-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantGaramond-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantInfant-Bold-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUnicase-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-Bold-webfont.woff') format('woff');
