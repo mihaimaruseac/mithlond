@@ -25,3 +25,4 @@ main = hakyll siteRules
 -- TODO: check responsiveness and disable paddings for small screens
 -- TODO: for responsiveness should also change point size to still keep same alphabet size on a line of text
 -- TODO: handle overflow
+-- TODO: CSS for code styling
