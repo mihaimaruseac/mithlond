@@ -26,3 +26,4 @@ main = hakyll siteRules
 -- TODO: for responsiveness should also change point size to still keep same alphabet size on a line of text
 -- TODO: handle overflow
 -- TODO: CSS for code styling
+-- TODO: separate page for comic? or separate repo?
