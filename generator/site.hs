@@ -27,3 +27,5 @@ main = hakyll siteRules
 -- TODO: handle overflow
 -- TODO: CSS for code styling
 -- TODO: separate page for comic? or separate repo?
+-- TODO: decide if we want to separate sections or use white background and no
+-- rounded corners. Maybe use one for HCAR and one for the other?
