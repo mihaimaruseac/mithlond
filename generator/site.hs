@@ -29,3 +29,5 @@ main = hakyll siteRules
 -- TODO: separate page for comic? or separate repo?
 -- TODO: decide if we want to separate sections or use white background and no
 -- rounded corners. Maybe use one for HCAR and one for the other?
+-- TODO: speaking of which, this should be easy to extend to HCAR output and
+-- this includes markers for section novelty too
