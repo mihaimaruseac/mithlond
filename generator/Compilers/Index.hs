@@ -36,8 +36,6 @@ indexContext =
 
 -- | Compile the list of posts to show on the index
 -- Needs to load all posts and sort them and extract the relevant context
--- TODO: see if we can generate HTML snippets for each post and load only
--- those instead of generating the entire post (see @Hakyll.Web.Template.List@)
 compilePostList :: Compiler [Item String]
 compilePostList = loadAll patternPosts >>= sortById
 

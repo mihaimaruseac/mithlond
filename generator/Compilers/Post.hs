@@ -29,8 +29,6 @@ postCompiler =
   pandocCompilerWithTransformM readOptions writeOptions f >>=
   loadAndApplyTemplate "templates/post.html" postContext >>=
   loadAndApplyTemplate "templates/default.html" postContext
-  -- TODO: update post context(s) and see what needs to go in each one
-  -- TODO: see if we still need the transform
   where
     f :: Pandoc -> Compiler Pandoc
     f p = do
@@ -150,13 +148,12 @@ mithlondExtensions = extensionsFromList
 writeOptions :: WriterOptions
 writeOptions = WriterOptions
   { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
-    -- TODO: check what div type to use, reformat
     writerTemplate          = Nothing --Just tocHTML
   , writerVariables         = [] -- will be taken from context
   , writerTabStop           = 2 -- converting tabs to spaces
   , writerTableOfContents   = True
   , writerIncremental       = False -- not for HTML blog posts
-  , writerHTMLMathMethod    = MathML -- seems to be the only one working, TODO: check more once all is done
+  , writerHTMLMathMethod    = MathML -- seems to be the only one working
   , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
   , writerNumberOffset      = [0,0,0,0,0,0] -- no need to start from other values
   , writerSectionDivs       = True -- wrap <h..> with <section>
@@ -172,8 +169,6 @@ writeOptions = WriterOptions
   , writerSlideLevel        = Nothing -- change not needed
   , writerTopLevelDivision  = TopLevelDefault -- change not needed
   , writerListings          = False -- change relevant only for LaTeX
-    -- TODO: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
-    -- TODO: check these after we have CSS?
   , writerHighlightStyle    = Just pygments
   , writerSetextHeaders     = True -- change not relevant here
   , writerEpubSubdirectory  = "EPUB" -- change not needed

@@ -28,7 +28,6 @@ siteRules = do
 
 -- | Rules for the index page
 -- Should display links to all of the articles, in a nice tabular format
--- TODO: investigate other display options
 indexRules :: Rules ()
 indexRules = do
   route idRoute

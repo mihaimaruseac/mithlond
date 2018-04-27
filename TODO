@@ -15,3 +15,15 @@
 -- rounded corners. Maybe use one for HCAR and one for the other?
 -- TODO: speaking of which, this should be easy to extend to HCAR output and
 -- this includes markers for section novelty too
+-- TODO: investigate other display options in indexRoutes
+-- TODO: see if we can generate HTML snippets for each post and load only
+-- those instead of generating the entire post (see @Hakyll.Web.Template.List@)
+-- TODO: check what div type to use in TOC, reformat
+-- TODO: color themese for code: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
+-- TODO: check these after we have CSS?
+-- TODO: check more math js options once all is done
+-- TODO: update post context(s) and see what needs to go in each one
+-- TODO: see if we still need the transform
+-- TODO: remove if no more headers, maybe, in post template
+-- TODO: front page
+-- TODO: other relevant tags in <head> of HTML
