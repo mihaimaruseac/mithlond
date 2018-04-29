@@ -2,27 +2,44 @@ TODOs
 =====
 
 - [ ] Validate HTML5 once blog becomes public
--- TODO: in site's footer add link to a README which explains blog's technology and is online accessible
--- TODO: in site's footer: Source available on <a href=TODO>GitHub</a> together with <a href=TODO>copyright</a>.
--- TODO: choose one of the above
--- TODO: change stability
--- TODO: new domain, new name, move repo
--- TODO: HTML5 doctor
--- TODO: check responsiveness and disable paddings for small screens
--- TODO: for responsiveness should also change point size to still keep same alphabet size on a line of text
--- TODO: handle overflow
--- TODO: CSS for code styling
--- TODO: separate page for comic? or separate repo?
--- TODO: decide if we want to separate sections or use white background and no rounded corners. Maybe use one for HCAR and one for the other?
--- TODO: speaking of which, this should be easy to extend to HCAR output and this includes markers for section novelty too
--- TODO: investigate other display options in indexRoutes
--- TODO: see if we can generate HTML snippets for each post and load only those instead of generating the entire post (see @Hakyll.Web.Template.List@)
--- TODO: check what div type to use in TOC, reformat
--- TODO: color themese for code: breezeDark, pygments, espresso, zenburn, tango, kate, haddock or custom(?)
--- TODO: check these after we have CSS?
--- TODO: check more math js options once all is done
--- TODO: update post context(s) and see what needs to go in each one
--- TODO: see if we still need the transform
--- TODO: remove if no more headers, maybe, in post template
--- TODO: front page
--- TODO: other relevant tags in <head> of HTML
+  - [ ] HTML5 doctor?
+- [ ] Should add link to README explaining accessibility and technologies of
+      blog (in the footer)
+- [ ] Add copyright information
+- [ ] Add GDPR information
+- [ ] Add source link on footer
+- [ ] Make sure footer is not overcrowded, can pick only a subset of above
+- [ ] Change stability field in Haddocks and cabal
+- [ ] Get new domain, rename and move
+- [ ] Make sure site is responsive
+- [ ] Disable padding on small screen
+- [ ] Change point size to keep same alphabet size on a line of text
+- [ ] Handle text overflow
+- [ ] Code styling CSS
+  - [ ] Also check color themes available
+    - breezeDark
+    - pygments
+    - espresso
+    - zenburn
+    - tango
+    - kate
+    - haddock
+    - custom: needs investigation
+- [ ] Comic? Or separate repo
+- [ ] Separate sections or one full page?
+  - [ ] Probably different settings for HCAR version
+- [ ] HCAR version
+  - [ ] output format
+  - [ ] novelty
+  - [ ] preface
+  - [ ] authors
+- [ ] investigate other display options in `indexRoutes`
+- [ ] see if we can generate HTML snippets for each post and load only those
+      instead of generating the entire post (see @Hakyll.Web.Template.List@)
+- [ ] check what div type to use in TOC, reformat
+- [ ] check more math js options once all is done
+- [ ] update post context(s) and see what needs to go in each one
+- [ ] see if we still need the transform in compiler
+- [ ] remove `<head>` in post template if there are no more headers
+- [ ] front page text
+- [ ] other relevant tags in <head> of HTML
