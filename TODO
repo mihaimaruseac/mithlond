@@ -43,3 +43,4 @@ TODOs
 - [ ] remove `<head>` in post template if there are no more headers
 - [ ] front page text
 - [ ] other relevant tags in <head> of HTML
+- [ ] think of proper tagline and title
