@@ -66,3 +66,27 @@ strong {
 //  letter-spacing: .05em;
 //  word-spacing: .2em;
 //}
+
+.mm-300 {
+  font-weight: 300;
+}
+
+.mm-400 {
+  font-weight: 400;
+}
+
+.mm-500 {
+  font-weight: 500;
+}
+
+.mm-600 {
+  font-weight: 600;
+}
+
+.mm-700 {
+  font-weight: 700;
+}
+
+.mm-italic {
+  font-style: italic
+}
