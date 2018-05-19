@@ -1,7 +1,9 @@
 @font-face {
   font-family: 'Cormorant';
-  //src: url('../fonts/CormorantInfant-Light-webfont.woff') format('woff');
-  //src: url('../fonts/CormorantSC-Light-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-Light-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-Light-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Light-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-Light-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-Light-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 300;
@@ -9,8 +11,10 @@
 
 @font-face {
   font-family: 'Cormorant';
-  //src: url('../fonts/CormorantInfant-Regular-webfont.woff') format('woff');
-  //src: url('../fonts/CormorantSC-Regular-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-Regular-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-Regular-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Regular-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-Regular-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-Regular-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 400;
@@ -18,8 +22,10 @@
 
 @font-face {
   font-family: 'Cormorant';
-  //src: url('../fonts/CormorantInfant-Medium-webfont.woff') format('woff');
-  //src: url('../fonts/CormorantSC-Medium-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-Medium-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-Medium-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Medium-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-Medium-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-Medium-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 500;
@@ -27,8 +33,10 @@
 
 @font-face {
   font-family: 'Cormorant';
-  //src: url('../fonts/CormorantInfant-SemiBold-webfont.woff') format('woff');
-  //src: url('../fonts/CormorantSC-SemiBold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-SemiBold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-SemiBold-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-SemiBold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-SemiBold-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 600;
@@ -36,44 +44,122 @@
 
 @font-face {
   font-family: 'Cormorant';
-  //src: url('../fonts/CormorantInfant-Bold-webfont.woff') format('woff');
-  //src: url('../fonts/CormorantSC-Bold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-Bold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-Bold-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Bold-webfont.woff') format('woff');
+  src: url('../fonts/CormorantSC-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantUpright-Bold-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 700;
 }
 
-//@font-face {
-//  font-family: 'Cormorant';
-//  src: url('../fonts/CormorantInfant-LightItalic-webfont.woff') format('woff');
-//  font-style: italic;
-//  font-weight: 300;
-//}
-//
-//@font-face {
-//  font-family: 'Cormorant';
-//  src: url('../fonts/CormorantInfant-Italic-webfont.woff') format('woff');
-//  font-style: italic;
-//  font-weight: 400;
-//}
-//
-//@font-face {
-//  font-family: 'Cormorant';
-//  src: url('../fonts/CormorantInfant-MediumItalic-webfont.woff') format('woff');
-//  font-style: italic;
-//  font-weight: 500;
-//}
-//
-//@font-face {
-//  font-family: 'Cormorant';
-//  src: url('../fonts/CormorantInfant-SemiBoldItalic-webfont.woff') format('woff');
-//  font-style: italic;
-//  font-weight: 600;
-//}
-//
-//@font-face {
-//  font-family: 'Cormorant';
-//  src: url('../fonts/CormorantInfant-BoldItalic-webfont.woff') format('woff');
-//  font-style: italic;
-//  font-weight: 700;
-//}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/CormorantGaramond-LightItalic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-LightItalic-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-LightItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/CormorantGaramond-Italic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-Italic-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-Italic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/CormorantGaramond-MediumItalic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-MediumItalic-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-MediumItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/CormorantGaramond-SemiBoldItalic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-SemiBoldItalic-webfont.woff') format('woff');
+  src: url('../fonts/Cormorant-SemiBoldItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant-BoldItalic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantGaramond-BoldItalic-webfont.woff') format('woff');
+  src: url('../fonts/CormorantInfant-BoldItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'test';
+  src: url('../fonts/cmunbmo-webfont.woff') format('woff');
+  font-weight: 300;
+}
+/*
+  font-family: 'cmu_brightoblique';
+  src: url('../fonts/cmunbmo-webfont.woff') format('woff');
+  font-family: 'cmu_brightroman';
+  src: url('../fonts/cmunbmr-webfont.woff') format('woff');
+  font-family: 'cmu_brightsemibold';
+  src: url('../fonts/cmunbsr-webfont.woff') format('woff');
+  font-family: 'cmu_brightsemiboldoblique';
+  src: url('../fonts/cmunbso-webfont.woff') format('woff');
+  font-family: 'cmu_classical_serifitalic';
+  src: url('../fonts/cmunci-webfont.woff') format('woff');
+  font-family: 'cmu_concretebold';
+  src: url('../fonts/cmunobx-webfont.woff') format('woff');
+  font-family: 'cmu_concretebolditalic';
+  src: url('../fonts/cmunobi-webfont.woff') format('woff');
+  font-family: 'cmu_concreteitalic';
+  src: url('../fonts/cmunoti-webfont.woff') format('woff');
+  font-family: 'cmu_concreteroman';
+  src: url('../fonts/cmunorm-webfont.woff') format('woff');
+  font-family: 'cmu_sans_serifbold';
+  src: url('../fonts/cmunsx-webfont.woff') format('woff');
+  font-family: 'cmu_sans_serifboldoblique';
+  src: url('../fonts/cmunso-webfont.woff') format('woff');
+  font-family: 'cmu_sans_serif_demi_condemiCn';
+  src: url('../fonts/cmunssdc-webfont.woff') format('woff');
+  font-family: 'cmu_sans_serifoblique';
+  src: url('../fonts/cmunsi-webfont.woff') format('woff');
+  font-family: 'cmu_sans_serifmedium';
+  src: url('../fonts/cmunss-webfont.woff') format('woff');
+  font-family: 'cmu_serifbold';
+  src: url('../fonts/cmunbx-webfont.woff') format('woff');
+  font-family: 'cmu_serifbolditalic';
+  src: url('../fonts/cmunbi-webfont.woff') format('woff');
+  font-family: 'cmu_serif_extraboldslanted';
+  src: url('../fonts/cmunbl-webfont.woff') format('woff');
+  font-family: 'cmu_serif_extraromanslanted';
+  src: url('../fonts/cmunsl-webfont.woff') format('woff');
+  font-family: 'cmu_serifitalic';
+  src: url('../fonts/cmunti-webfont.woff') format('woff');
+  font-family: 'cmu_serifroman';
+  src: url('../fonts/cmunrm-webfont.woff') format('woff');
+  font-family: 'cmu_serif_upright_ituprightIt';
+  src: url('../fonts/cmunui-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textbold';
+  src: url('../fonts/cmuntb-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textbolditalic';
+  src: url('../fonts/cmuntx-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textlight';
+  src: url('../fonts/cmunbtl-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textLtOb';
+  src: url('../fonts/cmunbto-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textitalic';
+  src: url('../fonts/cmunit-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_textregular';
+  src: url('../fonts/cmuntt-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_text_variablIt';
+  src: url('../fonts/cmunvi-webfont.woff') format('woff');
+  font-family: 'cmu_typewriter_text_variablMd';
+  src: url('../fonts/cmunvt-webfont.woff') format('woff');
+*/
