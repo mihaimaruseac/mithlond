@@ -17,7 +17,7 @@ body {
   font-family: 'Cormorant', serif;
   font-size: 25px;
   line-height: 1.2;
-  font-synthesis: none;
+  //font-synthesis: none;
   font-weight: 300;
   hyphens: auto;
 }
@@ -89,4 +89,20 @@ strong {
 
 .mm-italic {
   font-style: italic
+}
+
+.mm-serif {
+  font-family: serif
+}
+
+.mm-sans-serif {
+  font-family: sans-serif
+}
+
+.mm-monospace {
+  font-family: monospace
+}
+
+.mm-cursive {
+  font-family: cursive
 }
