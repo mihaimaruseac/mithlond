@@ -106,3 +106,7 @@ strong {
 .mm-cursive {
   font-family: 'Cormorant', cursive;
 }
+
+.mm-small-caps {
+  font-variant: 'small-caps';
+}
