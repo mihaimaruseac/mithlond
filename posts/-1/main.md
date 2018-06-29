@@ -39,6 +39,15 @@ Same as above but using a font weight of 700.
 
 <hr/>
 
+Same as above but using an italic font weight of 500.
+
+<div class="mm-italic mm-500">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-italic mm-500 mm-cormorant">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-italic mm-500 mm-cormorant-garamond">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-italic mm-500 mm-cormorant-infant">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-italic mm-500 mm-cormorant-sc">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<hr/>
+
 Remainder of the article is old post
 
 <div class="mm-300">Using font weight 300. Ligatures: ffi fi fl. Special: ăâ€șțłö.</div>
