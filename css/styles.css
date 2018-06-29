@@ -14,7 +14,8 @@ body {
 
   background-color: #dedede;
 
-  font-family: 'Cormorant', serif;
+  //font-family: 'Cormorant', serif;
+  font-family: Palatino, serif;
   font-size: 25px;
   line-height: 1.2;
   font-synthesis: none;
