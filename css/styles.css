@@ -88,21 +88,21 @@ strong {
 }
 
 .mm-italic {
-  font-style: italic
+  font-style: italic;
 }
 
 .mm-serif {
-  font-family: 'Cormorant', serif
+  font-family: 'Cormorant', serif;
 }
 
 .mm-sans-serif {
-  font-family: 'Cormorant', sans-serif
+  font-family: 'Cormorant', sans-serif;
 }
 
 .mm-monospace {
-  font-family: 'Cormorant', monospace
+  font-family: 'Cormorant', monospace;
 }
 
 .mm-cursive {
-  font-family: 'Cormorant', cursive
+  font-family: 'Cormorant', cursive;
 }
