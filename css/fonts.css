@@ -4,7 +4,6 @@
   src: url('../fonts/CormorantInfant-Light-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-Light-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-Light-webfont.woff') format('woff');
-  src: url('../fonts/CormorantUpright-Light-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 300;
 }
@@ -15,7 +14,6 @@
   src: url('../fonts/CormorantInfant-Regular-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-Regular-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-Regular-webfont.woff') format('woff');
-  src: url('../fonts/CormorantUpright-Regular-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 400;
 }
@@ -26,7 +24,6 @@
   src: url('../fonts/CormorantInfant-Medium-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-Medium-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-Medium-webfont.woff') format('woff');
-  src: url('../fonts/CormorantUpright-Medium-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 500;
 }
@@ -37,7 +34,6 @@
   src: url('../fonts/CormorantInfant-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-SemiBold-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-SemiBold-webfont.woff') format('woff');
-  src: url('../fonts/CormorantUpright-SemiBold-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 600;
 }
@@ -48,7 +44,6 @@
   src: url('../fonts/CormorantInfant-Bold-webfont.woff') format('woff');
   src: url('../fonts/Cormorant-Bold-webfont.woff') format('woff');
   src: url('../fonts/CormorantSC-Bold-webfont.woff') format('woff');
-  src: url('../fonts/CormorantUpright-Bold-webfont.woff') format('woff');
   font-style: normal;
   font-weight: 700;
 }
