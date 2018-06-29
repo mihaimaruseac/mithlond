@@ -15,7 +15,7 @@ body {
   background-color: #dedede;
 
   //font-family: 'Cormorant', serif;
-  font-family: Palatino, serif;
+  font-family: 'Palatino', serif;
   font-size: 25px;
   line-height: 1.2;
   font-synthesis: none;
@@ -88,26 +88,90 @@ strong {
   font-weight: 700;
 }
 
+.mm-small-caps {
+  font-variant: small-caps;
+}
+
 .mm-italic {
   font-style: italic;
 }
 
 .mm-serif {
-  font-family: 'Cormorant', serif;
+  font-family: 'Palatino', serif;
 }
 
 .mm-sans-serif {
-  font-family: 'Cormorant', sans-serif;
+  font-family: 'Palatino', sans-serif;
 }
 
 .mm-monospace {
-  font-family: 'Cormorant', monospace;
+  font-family: 'Palatino', monospace;
 }
 
 .mm-cursive {
+  font-family: 'Palatino', cursive;
+}
+
+.mm-cormorant-serif {
+  font-family: 'Cormorant', serif;
+}
+
+.mm-cormorant-sans-serif {
+  font-family: 'Cormorant', sans-serif;
+}
+
+.mm-cormorant-monospace {
+  font-family: 'Cormorant', monospace;
+}
+
+.mm-cormorant-cursive {
   font-family: 'Cormorant', cursive;
 }
 
-.mm-small-caps {
-  font-variant: small-caps;
+.mm-cormorant-garamond-serif {
+  font-family: 'CormorantGaramond', serif;
+}
+
+.mm-cormorant-garamond-sans-serif {
+  font-family: 'CormorantGaramond', sans-serif;
+}
+
+.mm-cormorant-garamond-monospace {
+  font-family: 'CormorantGaramond', monospace;
+}
+
+.mm-cormorant-garamond-cursive {
+  font-family: 'CormorantGaramond', cursive;
+}
+
+.mm-cormorant-infant-serif {
+  font-family: 'CormorantInfant', serif;
+}
+
+.mm-cormorant-infant-sans-serif {
+  font-family: 'CormorantInfant', sans-serif;
+}
+
+.mm-cormorant-infant-monospace {
+  font-family: 'CormorantInfant', monospace;
+}
+
+.mm-cormorant-infant-cursive {
+  font-family: 'CormorantInfant', cursive;
+}
+
+.mm-cormorant-sc-serif {
+  font-family: 'CormorantSC', serif;
+}
+
+.mm-cormorant-sc-sans-serif {
+  font-family: 'CormorantSC', sans-serif;
+}
+
+.mm-cormorant-sc-monospace {
+  font-family: 'CormorantSC', monospace;
+}
+
+.mm-cormorant-sc-cursive {
+  font-family: 'CormorantSC', cursive;
 }

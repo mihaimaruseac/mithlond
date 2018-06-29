@@ -4,7 +4,37 @@ postid: -1
 title: The newest post
 ---
 
-Another post, more recent.
+Another post, more recent. This paragraph uses the default body font.
+
+<hr/>
+
+The following paragraph all use a font weight of 300, but different font
+faces.
+
+<div class="mm-300 mm-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-sans-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-monospace">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cursive">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-sans-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-monospace">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-cursive">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-garamond-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-garamond-sans-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-garamond-monospace">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-garamond-cursive">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-infant-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-infant-sans-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-infant-monospace">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-infant-cursive">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-sc-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-sc-sans-serif">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-sc-monospace">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+<div class="mm-300 mm-cormorant-sc-cursive">ffi fi fl. ăâ€șțłö. 01234567890 ABCDEFghijklMNOPQrstuvxyz?.!</div>
+
+<hr/>
+
+Remainder of the article is old post
 
 <div class="mm-300">Using font weight 300. Ligatures: ffi fi fl. Special: ăâ€șțłö.</div>
 <div class="mm-400">Using font weight 400. Ligatures: ffi fi fl. Special: ăâ€șțłö.</div>
