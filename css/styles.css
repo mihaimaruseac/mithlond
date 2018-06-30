@@ -18,7 +18,7 @@ body {
   font-family: 'Palatino', serif;
   font-size: 25px;
   line-height: 1.2;
-  font-synthesis: none;
+  //font-synthesis: none;
   font-weight: 300;
   hyphens: auto;
 }
@@ -59,14 +59,13 @@ strong {
   font-weight: bold;
 }
 
-//.site-header > h1 {
-//  font: 62.5% Palatino, "Times New Roman", serif;
-//  font-size: 100%;
-//  font-weight: 400;
-//  font-variant: small-caps;
-//  letter-spacing: .05em;
-//  word-spacing: .2em;
-//}
+.site-header > h1 {
+  font-family: CormorantSC;
+  font-size: 300%;
+  font-weight: 300;
+  letter-spacing: .05em;
+  word-spacing: .2em;
+}
 
 .mm-300 {
   font-weight: 300;
