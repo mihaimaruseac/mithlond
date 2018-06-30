@@ -11,9 +11,7 @@ body {
     ". main   ."
     ". footer .";
   grid-row-gap: 15px;
-
   background-color: #dedede;
-
   font-family: 'CMU', serif;
   font-size: 25px;
   line-height: 1.2;
@@ -23,7 +21,6 @@ body {
 
 .content {
   background-color: #fff;
-
   box-shadow: 0 0 12px 1px rgba(42, 42, 42, 0.2);
   padding: 1em 2em;
   margin: 0em 2em;
@@ -33,7 +30,6 @@ body {
 
 .site-header {
   grid-area: header;
-
   text-align: center;
 }
 
