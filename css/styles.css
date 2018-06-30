@@ -75,6 +75,10 @@ strong {
   font-size: 130%;
 }
 
+.site-header > nav {
+  font-family: CormorantInfant;
+}
+
 .mm-300 {
   font-weight: 300;
 }
