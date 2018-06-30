@@ -52,13 +52,24 @@ body {
 
 .site-main {
   grid-area: main;
-
   text-align: justify;
+}
+
+.site-main header {
+  font-family: CormorantInfant;
+}
+
+.site-main header > h1 {
+  margin: 0;
+}
+
+.site-main header > .metadata {
+  font-style: italic;
+  margin: 0;
 }
 
 .site-footer {
   grid-area: footer;
-
   text-align: center;
 }
 
