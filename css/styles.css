@@ -73,12 +73,20 @@ body {
   text-align: center;
 }
 
+.site-footer > div {
+  font-size: 75%;
+}
+
 em {
   font-style: italic;
 }
 
 strong {
   font-weight: bold;
+}
+
+code {
+  font-family: 'CMU-TW';
 }
 
 .mm-300 {
