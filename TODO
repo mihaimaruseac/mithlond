@@ -39,6 +39,9 @@ TODOs
 - [ ] Test on multiple browsers and OSes
 - [ ] Media queries to display on small screens
 - [ ] Use the screen.css template examples for more control when/if needed
+- [ ] Favicon
+- [ ] RSS feed
+- [ ] Open graph markup
 
 Extensions
 =========
