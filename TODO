@@ -25,14 +25,6 @@ TODOs
     - kate
     - haddock
     - custom: needs investigation
-- [ ] Comic? Or separate repo
-- [ ] Separate sections or one full page?
-  - [ ] Probably different settings for HCAR version
-- [ ] HCAR version
-  - [ ] output format
-  - [ ] novelty
-  - [ ] preface
-  - [ ] authors
 - [ ] investigate other display options in `indexRoutes`
 - [ ] see if we can generate HTML snippets for each post and load only those
       instead of generating the entire post (see @Hakyll.Web.Template.List@)
@@ -47,3 +39,15 @@ TODOs
 - [ ] Test on multiple browsers and OSes
 - [ ] Media queries to display on small screens
 - [ ] Use the screen.css template examples for more control when/if needed
+
+Extensions
+=========
+
+- [ ] Comic? Or separate repo
+- [ ] Separate sections or one full page?
+  - [ ] Probably different settings for HCAR version
+- [ ] HCAR version
+  - [ ] output format
+  - [ ] novelty
+  - [ ] preface
+  - [ ] authors
