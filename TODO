@@ -45,3 +45,5 @@ TODOs
 - [ ] other relevant tags in <head> of HTML
 - [x] think of proper tagline and title
 - [ ] Test on multiple browsers and OSes
+- [ ] Media queries to display on small screens
+- [ ] Use the screen.css template examples for more control when/if needed
