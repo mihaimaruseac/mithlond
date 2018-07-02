@@ -88,3 +88,13 @@ strong {
 code {
   font-family: 'CMU-TW';
 }
+
+.post-index {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.post-index .right {
+  text-align: right;
+}
