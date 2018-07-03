@@ -26,14 +26,9 @@ import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
 postCompiler =
-  pandocCompilerWithTransformM readOptions writeOptions f >>=
+  pandocCompilerWith readOptions writeOptions >>=
   loadAndApplyTemplate "templates/post.html" postContext >>=
   loadAndApplyTemplate "templates/default.html" postContext
-  where
-    f :: Pandoc -> Compiler Pandoc
-    f p = do
-      unsafeCompiler $ print p
-      return p
 
 -- | The post context for the fields in @templates/post.html@.
 postContext :: Context String
