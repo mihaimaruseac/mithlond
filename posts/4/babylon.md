@@ -78,7 +78,9 @@ text for the component expressions was inserted into the larger text,
 including constructs such as "make a copy of this value" to keep the old one
 intact (similar to how registers are pushed on a stack before a function
 call). Control flow constructs are somehow present too, albeit in a very
-primitive form requiring a lot of duplication.
+primitive form requiring a lot of duplication. To keep this article short, I
+will not go into details on these. They are readily accessible in Knuth or in
+many other resources on the internet (TODO: links)
 
 We are now saying that Charles Babagge is the first creator of the computer
 and that Euclid's algorithm for finding the greatest common divisor is the
