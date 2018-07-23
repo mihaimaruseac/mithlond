@@ -19,6 +19,43 @@ body {
   hyphens: auto;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+  text-indent: -3px;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  text-indent: -2px;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
 .content {
   background-color: #fff;
   box-shadow: 0 0 12px 1px rgba(42, 42, 42, 0.2);
@@ -59,11 +96,11 @@ body {
   font-family: CormorantInfant;
 }
 
-.site-main header > h1 {
+.site-main header h1 {
   margin: 0;
 }
 
-.site-main header > .metadata {
+.site-main header .metadata {
   font-style: italic;
   margin: 0;
 }
