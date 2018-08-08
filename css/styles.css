@@ -29,15 +29,11 @@ h4, h5, h6 {
 h1 {
   font-size: 5rem;
   line-height: 1.2em;
-  letter-spacing: -2px;
-  text-indent: -3px;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 1.2em;
-  letter-spacing: -1px;
-  text-indent: -2px;
 }
 
 h3 {
