@@ -138,3 +138,7 @@ code {
 .post-index .right {
   text-align: right;
 }
+
+.footnotes {
+  font-size: 0.75rem;
+}
