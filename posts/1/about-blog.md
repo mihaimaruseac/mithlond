@@ -118,6 +118,14 @@ main = do
 
 ## TODO: launching the blog
 
+### Header level 3
+
+#### Header level 4
+
+##### Header level 5
+
+###### Header level 6
+
 TODO: see styling of sections and code
 
 [yesod]: https://www.yesodweb.com/ "Yesod"
