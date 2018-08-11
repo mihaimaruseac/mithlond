@@ -13,8 +13,6 @@ The second part of this blog post is a self-referential documentation of the
 changes done to this blog between its releases, as I suspect there will be
 many in the future.
 
-So, let's begin with the first part.
-
 # Background
 
 I created my first blog when I was 18, on the now defunct Yahoo 360; I didn't
@@ -65,7 +63,7 @@ accessible to all.
 
 Finally, just a few months ago, one coworker was telling us a story from the
 time he was a PhD student: whenever he was going to his advisor with a new
-paper claiming that he understood it, the advisor will reply with a simple
+paper claiming that he understood it, the advisor would reply with a simple
 question: "Did you code it?" It turns out that consciously transposing an
 article into code is a sure way of finding out corner cases and places where
 the understanding is not that perfect. Thus, another reason for this blog is
