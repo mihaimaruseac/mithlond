@@ -41,8 +41,8 @@ aggregated per article, per country or per first 2 IP blocks (e.g.
 [Laplace noise][laplace] with scale $10$. This ensures [Differential
 Privacy][dp] with budget $0.1$ per release. Or, in other terms, the reported
 counts would be within $\pm 10 \log 10 \approx 23.03$ of the real ones. There
-will be a rounding and truncation step of post processing so that the counts
-look like counts, not floating point numbers.
+will be a rounding and truncation step of post processing so that the numbers
+look like counts, not fractional numbers or negative ones.
 
 In case any of these change, I will update this page accordingly, with a
 changelog.
