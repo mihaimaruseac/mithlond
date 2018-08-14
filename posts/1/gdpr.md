@@ -20,17 +20,20 @@ is about so a user who views the site with JS disabled can still see what is
 missing.
 
 Second, and the relevant part here, I will use Google Analytics to track
-views. That means that Google might track you via this script, but please
-refer to them for the way they use the data. From my point of view, the
-statistics that I get from GA are only to see which articles are read most and
-which articles need a rehash if they are viewed frequently years after they've
-been posted.
+views -- I'm deferring to them for the GDPR stuff related to how Google uses
+GA to track the users.  From my point of view, the statistics that I get from
+GA are only to see which articles are read most and which articles need a
+rehash if they are viewed frequently years after they've been posted.
 
 Since this blog is self-hosted on a virtualised environment, I also have
 access to the web server's access log. I'm using the data from there for two
 things: (auto-)blocking of script kiddies via `fail2ban` and, optionally, more
 details about access patterns (i.e., I could see if a potential redirect I
 might make in the future when the URL scheme changes is no longer needed).
+
+No other sites will get access to your viewing patterns. This means that I
+won't include tracking pixels, adds or share buttons to social media through
+which you can be tracked.
 
 If I ever post statistics gathered from GA or web server's logs they would be
 aggregated per article, per country or per first 2 IP blocks (e.g.
