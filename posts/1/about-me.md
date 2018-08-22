@@ -18,8 +18,8 @@ part of the reason why I have this blog. I also have a significant background
 in Physics which I sometimes use in my work.
 
 My main interests are Artificial Intelligence and Data Mining/Data Science,
-Privacy (mainly Differential Privacy -- DP), Functional Programming (with more
-than 95% of the focus on Haskell). I tend to use and promote Open Source
+Differential Privacy (DP), and Functional Programming -- with more
+than 95% of the focus on Haskell. I tend to use and promote Open Source
 software, being a Linux user for more than 10 years -- Fedora user for the
 last half of it -- and using Vim to edit anything.
 
@@ -35,9 +35,10 @@ Besides the Computer Science, Mathematics and Physics interests, I also have a
 passion for History, some Philosophy, books and movies. Sometimes I play
 boardgames, preferring the strategy-based games to the random-chance ones. I
 used to play the _Pardus_ space-oriented online game where I tried to use data
-science to extract features about the evolution of that world and that gave me
-the nickname of _Mathman_, although in presence of technical people I prefer
-not to use it since I still have a lot to learn in that field.
+science to extract features about the evolution of that world. That resulted
+in players giving me the nickname of _Mathman_ which somehow also got outside
+the game. Nevertheless, in presence of technical people, I prefer not to use
+it as I still have a lot to learn in that field.
 
 In the remainder of this article, I will post a list of all the publications I
 have, relevant achievements and other online profiles where people can find me
