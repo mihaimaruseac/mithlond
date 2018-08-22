@@ -43,8 +43,68 @@ In the remainder of this article, I will post a list of all the publications I
 have, relevant achievements and other online profiles where people can find me
 and I am active.
 
-TODO
+# Publications {-}
 
+Here are all my academic publications, from newest to oldest. Drafts and
+papers under review are not included:
+
+###### 2017 {-}
+
+* **Mihai Maruseac**: "Haskell --- a language for modern times", ACM Crossroads
+  24(1): 64-66 (2017)
+* **Mihai Maruseac**, Gabriel Ghinita, Goce Trajcevski, Peter Scheuermann:
+  "Privacy-preserving detection of anomalous phenomena in crowdsourced
+  environmental sensing using fine-grained weighted voting", GeoInformatica
+  21(4): 733-762 (2017)
+* Oana-Georgiana Niculaescu, **Mihai Maruseac**, Gabriel Ghinita:
+  "Differentially-Private Big Data Analytics for High-Speed Research Network
+  Traffic Measurement", CODASPY 2017: 151-153
+
+###### 2016 {-}
+
+* **Mihai Maruseac**: "Effective online and offline privacy-preserving
+  processing of location data", **PhD Thesis**, University of Massachusetts
+  Boston
+* **Mihai Maruseac**, Gabriel Ghinita: "Processing uncertain spatial data
+  resulting from differentially-private sanitization", SIGSPATIAL Special
+  8(2): 26-34 (2016)
+* **Mihai Maruseac**, Gabriel Ghinita: "Privacy-Preserving Mining of
+  Sequential Association Rules from Provenance Workflows", CODASPY 2016:
+  127-129
+* **Mihai Maruseac**, Gabriel Ghinita: "Differentially-Private Mining of
+  Representative Travel Patterns", MDM 2016: 272-281; **Best Student Paper
+  award**
+
+###### 2015 {-}
+
+* **Mihai Maruseac**, Gabriel Ghinita, Ming Ouyang, Razvan Rughinis: "Hardware
+  acceleration of Private Information Retrieval protocols using GPUs", ASAP
+  2015: 120-127
+* **Mihai Maruseac**, Gabriel Ghinita: "Differentially-Private Mining of
+  Moderately-Frequent High-Confidence Association Rules", CODASPY 2015: 13-24
+* Gabriel Ghinita, **Mihai Maruseac**: "Disseminating Location Privacy Threats
+  and Protection Techniques through Capture-the-Flag Games (Vision Paper)",
+  GeoPrivacy@SIGSPATIAL 2015: 2:1-2:4
+* **Mihai Maruseac**, Gabriel Ghinita, Besim Avci, Goce Trajcevski, Peter
+  Scheuermann: "Privacy-Preserving Detection of Anomalous Phenomena in
+  Crowdsourced Environmental Sensing", SSTD 2015: 313-332
+
+###### 2014 {-}
+
+* **Mihai Maruseac**, Gabriel Ghinita, Razvan Rughinis: "Privacy-preserving
+  publication of provenance workflows", CODASPY 2014: 159-162
+* **Mihai Maruseac**, Gabriel Ghinita, Ming Ouyang, Razvan Rughinis: "Towards
+  efficient private spatial information retrieval using GPUs", SIGSPATIAL/GIS
+  2014: 405-408
+
+###### 2013 {-}
+
+* **Mihai Maruseac**: "Real Time Self-Organizing Systems for Swarm Control",
+  CSCS, 2013, 175-179
+
+# Online profiles {-}
+
+TODO
 [acs]: http://acs.pub.ro/en/
 [umb]: https://www.cs.umb.edu/
 [dp]: https://en.wikipedia.org/wiki/Differential_Privacy
