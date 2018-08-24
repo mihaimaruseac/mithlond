@@ -99,10 +99,12 @@ won't shy away from math, I will try to explain the concept as much as
 possible, making them very intuitive.
 
 Finally, there is another anecdote that provides a new category of articles.
-One Haskell programmer once said that he is able to immediately answer
-questions and solve bugs related to his packages because he keeps a journal of
-all the mistakes he had made and always references that when a new question
-arises.
+One Haskell programmer, I think it was Michael Snoyman, once said that he is
+able to immediately answer questions and solve bugs related to his packages
+because he keeps a journal of all the mistakes he had made and always
+references that when a new question arises. A similar reasoning led Donald
+Knuth to keep a log of all the bugs he has added to TeX. Thus, I think I
+should try it too.
 
 Of course, this is a personal blog so I might from time to time also include
 non-technical articles in here, or just drop some hints. I will try to
