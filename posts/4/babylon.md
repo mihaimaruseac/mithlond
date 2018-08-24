@@ -17,8 +17,6 @@ didn't have a symbol for 0 at first and later they just used a gap for it.
 However, very few people know that floating point arithmetic was actually used
 in the land between Tigris and Euphrates.
 
-![Babylonian numerals](https://static.scientificamerican.com/blogs/cache/file/7C228A08-14C0-45F1-A430B1CFAA9A7B83.jpg)
-
 What does this mean? Reproducing the example from Knuth, the two digit number
 $2,20$ (that is, the symbols for 2 and 20 one next to the other) means both $2
 \times 60 + 20 = 140$ but also $2 + 20/60 = 2.3333..$. In this peculiar
