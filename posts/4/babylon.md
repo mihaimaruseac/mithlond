@@ -1,6 +1,6 @@
 ---
 date: 2018-07-04
-title: Floating Point Numbers First Discovered in Ancient Babylon
+title: Floating Point Numbers First Used in Ancient Babylon
 postid: 4
 ---
 
