@@ -1,91 +1,65 @@
 ---
 date: 2018-07-04
-title: Math in ancient Babylon
+title: Floating Point Numbers First Discovered in Ancient Babylon
 postid: 4
 ---
 
-One of my hobbies is learning about history, and, since I like to claim I am a
-man of science, I will always enjoy reading about the way people did science
-in the past. This post is just an example of that, it came after I read
-Knuth's "Ancient Babylonian Algorithms" (TODO: cite) from the collection found
-in "Selected Papers on Computer Science" (TODO: cite).
+Besides Computer Science (and related topics), I also like history. I enjoy
+the piece which combine these topics. Such is the case of Knuth's ["Ancient
+Babylonian Algorithms"][knuth-1] which I found while reading the collection
+titled ["Selected Papers on Computer Science"][knuth-2].
 
 The paper turned out to be interesting because it offered new interesting
 insights beside the already known facts about ancient Summer. In fact, the
-first page of the article brings a significant piece of information: while it
-is well known that Babylonians used a base 60 system (TODO: image and link to
-it, zero handling), very few people know that they actually used floating
-point arithmetic.
+first page of the article brings a significant piece of information. It is
+well known that Babylonians used a base 60 system -- with the caveat that they
+didn't have a symbol for 0 at first and later they just used a gap for it.
+However, very few people know that floating point arithmetic was actually used
+in the land between Tigris and Euphrates.
 
-What does this mean? The two digit number $2,20$ (using the same notation as
-Knuth to not paint the hieroglyphs in this article) means both $2 \times 60 +
-20 = 140$ but also $2 + 20/60 = 2.3333..$. Yes, it is a peculiar notation, the
-exponent of the floating point is not written at all, so the same number
-$2,20$ can represent any number of the form $140*60^n$ where $n$ is any
-integer, positive or negative.
+![Babylonian numerals](https://static.scientificamerican.com/blogs/cache/file/7C228A08-14C0-45F1-A430B1CFAA9A7B83.jpg)
 
-How did scientists came to this finding? Probably because of the YBC 7289
-tablet (TODO: link, image). On it, we see a square labeled $30$ (i.e., the
-side's length) and two sets of numbers marking the diagonal. Assuming base 60
-with no floating point, the first one, $1,24,51,10$, would represent $1 \times
-60^3 + 24 \times 60^2 + 51 \times 60 + 10 = 305470$ and the second one,
-$42,25,35$, would represent $42 \times 60^2 + 25 \times 60 + 35 = 152735$. If
-any of them would represent the side of the diagonal, it should have been
-$30\sqrt{2} = 42.4264..$. However, the first number is $7200$ larger than the
-desired diagonal length ... so we can try ... (use floating point) and we see
-we get a good approximation. In fact, if we apply the same approach to the
-other number we get ... which is a very good approximation to $\sqrt{2}$.
+What does this mean? Reproducing the example from Knuth, the two digit number
+$2,20$ (that is, the symbols for 2 and 20 one next to the other) means both $2
+\times 60 + 20 = 140$ but also $2 + 20/60 = 2.3333..$. In this peculiar
+notation, the exponent of the floating point is not written at all. That is,
+the number $2,20$ can represent any number of the form $140 \times 60^n$ where
+$n$ is any integer, positive or negative.
 
-(TODO: recheck these numbers)
+This is easily visible from the [YBC 7289][ybc-7289] clay tablet, pictured
+below for ease of reference:
 
-Addition and subtraction in this system is easy. If both numbers are in the
-same range of powers of 60 (TODO: example), then all one has to do is add the
-nibbles by itself and take care of the carry, similar to how we do addition
-in base 10. If the numbers don't have the same exponent, the scribe would
-first have to align them and then proceed as before.
+![ybc 7289](https://upload.wikimedia.org/wikipedia/commons/0/0b/Ybc7289-bw.jpg)
 
-Multiplication and division are more complicated and were done via tables.
-TODO: expand, add recriprocal table, tables for each principal p, multiples of
-1,2,3,20,30,40,50 and 47 is 40 + 7.
+The image is a square and there are 3 numbers marked on it. One is clearly the
+length of the square, $30$. The other two numbers refer to the diagonal, but
+which one and with what precision?
 
-For example, here is how a scribe would compute the reciprocal of $2,5$ using
-the tables TODO expand.
+For a square of length $30$, the length of the diagonal should be $30\sqrt{2}
+= 42.4264\ldots$. The first number on the diagonal, $1,24,51,10$ would
+represent in normal base 60 the number $1 \times 60^3 + 24 \times 60^2 + 51
+\times 60 + 10 = 305470$. The other number, $42,25,35$ represents $42 \times
+60^2 + 25 \times 60 + 35 = 152735$. Both of these are too large to be the
+length of the diagonal.
 
-This sounds very close to an algorithm that one can have a computer execute.
-And, it turns out that the scribes were following standard procedures, for
-example this almost ritualistic text was written on the clay table associated
-with the solution to the above reciprocal (loosely translated into English):
+However, if we assume the use of floating points, then the first number is
+$305470 \times 60^{n_1}$ and the second is $152735 \times 60^{n_2}$ for some
+integers $n_1$ and $n_2$. Picking $n_1 = -3$ we get $1.4142\ldots \approx
+\sqrt{2}$ for the first number, thus getting to an approximation for
+$\sqrt{2}$ which was also used in the Greek mathematics of later times. Also,
+$n_2 = -2$ gives us the length of $42.426388\ldots$ length of the diagonal
+that we were seeking.
 
-TODO: cite procedure
+The next thing to do after having a way to represent numbers is to operate on
+them. Addition and subtraction are easy; multiplication and division were done
+via tables. In fact, the scribes doing the computations had to learn not only
+tables for the common operations but also algorithms for solving various
+problems, including quadratic problems, geometric series, square roots, etc.
+Careful analyzes of these processes revealed a close relationship between them
+and primitive versions of programming languages/algorithms. A quick dive into
+these algorithms is the subject of Knuth's paper with which I opened this
+article, one that I'd recommend you to read if interested in these things.
 
-We know that this is a procedure followed by rote because a similar problem
-with a different input has the following solution:
-
-TODO: cite procedure
-
-Only the numbers have changed, the rest of the text is the same. In fact, even
-in cases where one would have to multiply by $1$, the text wouldn't change.
-Thus, we can say that the scribe solving math problems was just a human
-computer at the time, following texts he had to learn by rote and reproduce
-daily.
-
-Besides the simple operations mentioned here, it turns out Babylonians had
-procedures to solve quadratic problems, compute geometric series,
-algorithmically generate larger tables of reciprocals and square roots, etc.
-From analyzing these procedures we find that primitive concepts of procedure
-calls/macro expansions were present: when computing a complex expression, the
-text for the component expressions was inserted into the larger text,
-including constructs such as "make a copy of this value" to keep the old one
-intact (similar to how registers are pushed on a stack before a function
-call). Control flow constructs are somehow present too, albeit in a very
-primitive form requiring a lot of duplication. To keep this article short, I
-will not go into details on these. They are readily accessible in Knuth or in
-many other resources on the internet (TODO: links)
-
-We are now saying that Charles Babagge is the first creator of the computer
-and that Euclid's algorithm for finding the greatest common divisor is the
-first algorithm ever. However,is it possible that people in Mesopotamia were
-ahead of these? Or it's just extrapolating from the few tablets we have found
-and decyphered?
-
-TODO: Haskell code for all of these things
+[knuth-1]: http://steiner.math.nthu.edu.tw/disk5/js/computer/1.pdf
+[knuth-2]: https://www-cs-faculty.stanford.edu/~knuth/cs.html
+[ybc-7289]: https://en.wikipedia.org/wiki/YBC_7289
