@@ -26,6 +26,7 @@ h4, h5, h6 {
   line-height: 1;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: CormorantInfant;
 }
 
 h1 {
@@ -89,7 +90,7 @@ h6 {
 }
 
 .site-main h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .site-main h2 {
@@ -100,14 +101,16 @@ h6 {
   font-family: CormorantInfant;
 }
 
-.site-main header h1 {
-  margin: 0;
-}
-
 .site-main header .metadata {
   font-style: italic;
   margin: 0;
 }
+
+.site-main header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
 
 .site-footer {
   grid-area: footer;
