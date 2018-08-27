@@ -117,9 +117,6 @@ I am active on the following online communities.
 * [Google+](https://plus.google.com/u/0/+MihaiMaruseac)
 * [Codingame](https://www.codingame.com/profile/04f59dcd46adaa10f704742ace10b8bd020968)
 
-As far as I know, there are no other profiles of me online, except some very
-old ones which I forgot about and will remove once I get to them.
-
 [acs]: http://acs.pub.ro/en/
 [umb]: https://www.cs.umb.edu/
 [dp]: https://en.wikipedia.org/wiki/Differential_Privacy
