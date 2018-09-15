@@ -36,14 +36,14 @@ Licensing the articles, the CSS, etc
 
 The text of the articles and all auxiliary materials, including, but not
 limited to, code, images, graphics, CSS, javascripts snippets, animations, etc.
-is licensed under [CC-BY-SA 3.0 US](cc-by-sa).
+is licensed under [CC-BY-SA 3.0 US][cc-by-sa].
 
 In short, you are free to copy and redistribute any material listed under this
 section and free to remix, transform and build upon the material for any
 purpose, including commercial purposes.
 
 A full text of the CC-BY-SA license that is applicable to this section can be
-found [online](cc-by-sa-legalese).
+found [online][cc-by-sa-legalese].
 
 [cc-by-sa]: https://creativecommons.org/licenses/by-sa/3.0/us/
 [cc-by-sa-legalese]: https://creativecommons.org/licenses/by-sa/3.0/us/legalcode
