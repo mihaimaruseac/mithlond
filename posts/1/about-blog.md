@@ -115,12 +115,16 @@ short, but no promise there either.
 This covered, it's time to move to the second subject of this article: a
 changelog of sorts of different versions of this blog.
 
+TODO: explain title
+
 # Changelog
 
 Each subsection here will include changes between two different releases of
 the blog. A new release is given by changes to the CSS, URL scheme or some
 extra features that I have planned and will add over time as I explore the
 power of the [Hakyll][hakyll] ecosystem.
+
+TODO: licensing
 
 ## TODO: Name of first version
 
