@@ -6,7 +6,7 @@ synopsis:           Personal blog
 description:        This is the Hakyll project for http://mithlond.ro blog.
 homepage:           http://mithlond.ro
 license:            PublicDomain
-license-file:       LICENSE
+license-file:       LICENSE.md
 author:             Mihai Maruseac
 maintainer:         mihai.maruseac@gmail.org
 copyright:          © 2018 Mihai Maruseac
