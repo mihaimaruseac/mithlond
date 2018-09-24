@@ -4,7 +4,7 @@ title: About me
 postid: 2
 ---
 
-Welcome. I am Mihai Maruseac, also known as _MM_.
+Welcome. I am Mihai Maruseac, also known as _MM_. TODO: fill in more details
 
 I studied Computer Science at [University POLITEHNICA of Bucharest][acs] (UPB)
 where I finished my undergrad by focusing on compilers, operating systems and
