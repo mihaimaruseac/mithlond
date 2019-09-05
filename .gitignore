@@ -4,3 +4,4 @@
 .stack-work/
 _site/
 _cache/
+stack.yaml.lock
