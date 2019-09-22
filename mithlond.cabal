@@ -29,6 +29,6 @@ executable site
   build-depends:
       base
     , containers
-    , hakyll
+    , hakyll >= 4.13 && < 4.14
     , pandoc
     , skylighting
