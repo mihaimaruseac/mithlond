@@ -4,5 +4,5 @@ packages:
 
 extra-deps:
 - hakyll-4.13.0.1
-- warp-3.2.28
 - http2-1.6.5
+- warp-3.2.28
