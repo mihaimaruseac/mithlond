@@ -31,4 +31,4 @@ executable site
     , containers
     , hakyll >= 4.13 && < 4.14
     , pandoc >= 2.7 && < 2.8
-    , skylighting
+    , skylighting >= 0.8 && < 0.9
