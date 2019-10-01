@@ -28,7 +28,7 @@ executable site
     -funbox-strict-fields -funfolding-use-threshold=16 -rtsopts=all
   build-depends:
       base
-    , containers >= 0.6 && < 0.7
-    , hakyll >= 4.13 && < 4.14
-    , pandoc >= 2.7 && < 2.8
-    , skylighting >= 0.8 && < 0.9
+    , containers >= 0.6.2.1 && < 0.7
+    , hakyll >= 4.13.0.1 && < 4.14
+    , pandoc >= 2.7.3 && < 2.8
+    , skylighting >= 0.8.3.2 && < 0.9
