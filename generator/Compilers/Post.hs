@@ -174,6 +174,7 @@ writeOptions = WriterOptions
   , writerReferenceDoc      = Nothing -- not needed for HTML output
   , writerReferenceLocation = EndOfDocument -- not needed for HTML output
   , writerSyntaxMap         = defaultSyntaxMap -- no need to change
+  , writerPreferAscii       = False -- we already produce utf-8 pages
   }
   {-
   where
