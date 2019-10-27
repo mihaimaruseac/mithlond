@@ -1,5 +1,5 @@
 ---
-date: 2018-07-04
+date: 2020-07-04
 title: Floating Point Numbers First Used in Ancient Babylon
 postid: 4
 ---

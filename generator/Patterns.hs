@@ -1,7 +1,7 @@
 {-|
 Module: Patterns
 Description: Patterns used for matching in rules and loading contexts
-Copyright: (c) Mihai Maruseac 2018
+Copyright: (c) Mihai Maruseac 2020
 Stability: experimental
 Portability: POSIX
 

@@ -4,7 +4,7 @@ Licensing the code for generating the blog
 The code used to generate this website, usually found in `generator` but not
 limited to that directory, is licensed under BSD-3 license, reproduced below.
 
-Copyright 2018 Mihai Maruseac
+Copyright 2020 Mihai Maruseac
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
