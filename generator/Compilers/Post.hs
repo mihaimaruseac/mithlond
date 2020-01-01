@@ -19,6 +19,7 @@ module Compilers.Post
 import Control.Applicative (empty)
 
 import qualified Data.Set as Set
+import qualified Data.Text as Text
 
 import Hakyll
 import Skylighting hiding (Context)
@@ -71,7 +72,7 @@ readOptions = ReaderOptions
 -- | Abbreviations to acknowledge in the parser
 -- Explicitly set these up instead of relying on defaults to make sure we have
 -- full control and are immune to changes from upstream.
-abbreviations :: Set.Set String
+abbreviations :: Set.Set Text.Text
 abbreviations = Set.fromList
   [ "Mr.", "Mrs.", "Ms.", "Capt.", "Dr.", "Prof.", "Gen.", "Gov.", "e.g."
   , "i.e.", "Sgt.", "St.", "vol.", "vs.", "Sen.", "Rep.", "Pres.", "Hon."
