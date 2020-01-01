@@ -6,6 +6,8 @@ Stability: experimental
 Portability: POSIX
 
 The compilers used to generate various pages on the site.
+
+This module just re-exports the compiler from the internal layer.
 -}
 
 module Compilers
