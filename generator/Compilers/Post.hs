@@ -145,7 +145,7 @@ writeOptions :: WriterOptions
 writeOptions = WriterOptions
   { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
     writerTemplate          = Nothing --Just tocHTML
-  , writerVariables         = [] -- will be taken from context
+  , writerVariables         = mempty -- will be taken from context
   , writerTabStop           = 2 -- converting tabs to spaces
   , writerTableOfContents   = True
   , writerIncremental       = False -- not for HTML blog posts
