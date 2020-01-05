@@ -5,7 +5,7 @@ Copyright: (c) Mihai Maruseac 2020
 Stability: experimental
 Portability: POSIX
 
-Definitions and compiler for posts
+Definitions and compiler for posts.
 -}
 
 {-# LANGUAGE LambdaCase #-}
