@@ -1,8 +1,7 @@
-resolver: lts-14.21
+resolver: lts-15.13
 packages:
 - .
 
 extra-deps:
-- hakyll-4.13.0.1
-- http2-1.6.5
-- warp-3.2.28
+- hakyll-4.13.3.0
+- file-embed-0.0.11.2@sha256:544b15a7de92f1e81e38ae5c3ea3ddc537a3ee9ce89cc3555ef0af420ea57d70,1327
