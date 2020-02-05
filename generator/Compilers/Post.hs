@@ -177,8 +177,3 @@ writeOptions = WriterOptions
   , writerSyntaxMap         = defaultSyntaxMap -- no need to change
   , writerPreferAscii       = False -- we already produce utf-8 pages
   }
-  {-
-  where
-    -- the HTML template used to show a post's table of contents
-    tocHTML = "<div id=\"post-TOC\">$toc$</div><div id=\"post-body\">$body$</div>"
-  -}
