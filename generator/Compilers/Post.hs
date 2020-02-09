@@ -22,7 +22,6 @@ import qualified Data.Set as Set
 import qualified Data.Text as Text
 
 import Hakyll
-import Skylighting hiding (Context)
 import Text.Pandoc
 
 postCompiler :: Compiler (Item String)
@@ -142,38 +141,12 @@ mithlondExtensions = extensionsFromList
 -- Explicitly set all of the remaining ones instead of relying on defaults to
 -- make sure we have full control and are immune to changes from upstream.
 writeOptions :: WriterOptions
-writeOptions = WriterOptions
-  { -- @loadAndApplyTemplate@ will add the final template but we use this for the TOC
-    writerTemplate          = Nothing --Just tocHTML
-  , writerVariables         = mempty -- will be taken from context
-  , writerTabStop           = 2 -- converting tabs to spaces
-  , writerTableOfContents   = True
-  , writerIncremental       = False -- not for HTML blog posts
+writeOptions = def
+  { writerTabStop           = 2 -- converting tabs to spaces
   , writerHTMLMathMethod    = MathML -- seems to be the only one working
   , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
-  , writerNumberOffset      = [0,0,0,0,0,0] -- no need to start from other values
   , writerSectionDivs       = True -- wrap <h..> with <section>
   , writerExtensions        = mithlondExtensions
-  , writerReferenceLinks    = False -- not needed for HTML output
-  , writerDpi               = 96
-  , writerWrapText          = WrapAuto
-  , writerColumns           = 72
   , writerEmailObfuscation  = ReferenceObfuscation
-  , writerIdentifierPrefix  = "" -- useful when generating fragments, not here
-  , writerCiteMethod        = Citeproc -- change not needed
   , writerHtmlQTags         = True
-  , writerSlideLevel        = Nothing -- change not needed
-  , writerTopLevelDivision  = TopLevelDefault -- change not needed
-  , writerListings          = False -- change relevant only for LaTeX
-  , writerHighlightStyle    = Just pygments
-  , writerSetextHeaders     = True -- change not relevant here
-  , writerEpubSubdirectory  = "EPUB" -- change not needed
-  , writerEpubMetadata      = Nothing -- change not needed
-  , writerEpubFonts         = [] -- change not needed
-  , writerEpubChapterLevel  = 1 -- change not needed
-  , writerTOCDepth          = 3
-  , writerReferenceDoc      = Nothing -- not needed for HTML output
-  , writerReferenceLocation = EndOfDocument -- not needed for HTML output
-  , writerSyntaxMap         = defaultSyntaxMap -- no need to change
-  , writerPreferAscii       = False -- we already produce utf-8 pages
   }
