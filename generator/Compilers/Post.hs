@@ -78,6 +78,25 @@ abbreviations = Set.fromList
   , "Rev.", "Ph.D.", "M.D.", "M.A.", "p.", "pp.", "ch.", "sec.", "cf.", "cp."
   ]
 
+-- | Options for the HTML writer for each article
+-- We change at least the math format (@writerHTMLMathMethod@) and add support
+-- for table of contents (@writerTemplate@ and @writerTableOfContents@).
+-- Make sure to set code highlighting format (@writerHighlightStyle@).
+-- Also nice to have is email obfuscation (@writerEmailObfuscation@), wrapping
+-- sections on an extra <section> tag (for CSS styling, @writerSectionDivs@).
+-- Explicitly set all of the remaining ones instead of relying on defaults to
+-- make sure we have full control and are immune to changes from upstream.
+writeOptions :: WriterOptions
+writeOptions = def
+  { writerTabStop           = 2 -- converting tabs to spaces
+  , writerHTMLMathMethod    = MathML -- seems to be the only one working
+  , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
+  , writerSectionDivs       = True -- wrap <h..> with <section>
+  , writerExtensions        = mithlondExtensions
+  , writerEmailObfuscation  = ReferenceObfuscation
+  , writerHtmlQTags         = True
+  }
+
 -- | Enabled extensions for the reader and the writer.
 -- Explicitly set these up instead of relying on defaults to make sure we have
 -- full control and are immune to changes from upstream.
@@ -131,22 +150,3 @@ mithlondExtensions = extensionsFromList
   , Ext_emoji -- allow emoji's of form :smile:
   , Ext_tex_math_double_backslash -- allow display-style math with \\[..\\]
   ]
-
--- | Options for the HTML writer for each article
--- We change at least the math format (@writerHTMLMathMethod@) and add support
--- for table of contents (@writerTemplate@ and @writerTableOfContents@).
--- Make sure to set code highlighting format (@writerHighlightStyle@).
--- Also nice to have is email obfuscation (@writerEmailObfuscation@), wrapping
--- sections on an extra <section> tag (for CSS styling, @writerSectionDivs@).
--- Explicitly set all of the remaining ones instead of relying on defaults to
--- make sure we have full control and are immune to changes from upstream.
-writeOptions :: WriterOptions
-writeOptions = def
-  { writerTabStop           = 2 -- converting tabs to spaces
-  , writerHTMLMathMethod    = MathML -- seems to be the only one working
-  , writerNumberSections    = True -- Use `.unnumbered` or `-` as attribute to not number
-  , writerSectionDivs       = True -- wrap <h..> with <section>
-  , writerExtensions        = mithlondExtensions
-  , writerEmailObfuscation  = ReferenceObfuscation
-  , writerHtmlQTags         = True
-  }
