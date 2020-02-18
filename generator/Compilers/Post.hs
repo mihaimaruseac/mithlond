@@ -62,21 +62,11 @@ readOptions = ReaderOptions
   , readerColumns               = 80 -- doesn't seem to have any effect
   , readerTabStop               = 4  -- indentation for code and continuations
   , readerIndentedCodeClasses   = [] -- works only for code indented by a number of spaces
-  , readerAbbreviations         = abbreviations
+  , readerAbbreviations         = defaultAbbrevs
   , readerDefaultImageExtension = ""
   , readerTrackChanges          = AcceptChanges -- definitely not relevant
   , readerStripComments         = False
   }
-
--- | Abbreviations to acknowledge in the parser
--- Explicitly set these up instead of relying on defaults to make sure we have
--- full control and are immune to changes from upstream.
-abbreviations :: Set.Set Text.Text
-abbreviations = Set.fromList
-  [ "Mr.", "Mrs.", "Ms.", "Capt.", "Dr.", "Prof.", "Gen.", "Gov.", "e.g."
-  , "i.e.", "Sgt.", "St.", "vol.", "vs.", "Sen.", "Rep.", "Pres.", "Hon."
-  , "Rev.", "Ph.D.", "M.D.", "M.A.", "p.", "pp.", "ch.", "sec.", "cf.", "cp."
-  ]
 
 -- | Options for the HTML writer for each article
 -- We change at least the math format (@writerHTMLMathMethod@) and add support
