@@ -56,17 +56,7 @@ postTitleField = Context $ \case
 -- Explicitly set these up instead of relying on defaults to make sure we have
 -- full control and are immune to changes from upstream.
 readOptions :: ReaderOptions
-readOptions = ReaderOptions
-  { readerExtensions            = mithlondExtensions
-  , readerStandalone            = False
-  , readerColumns               = 80 -- doesn't seem to have any effect
-  , readerTabStop               = 4  -- indentation for code and continuations
-  , readerIndentedCodeClasses   = [] -- works only for code indented by a number of spaces
-  , readerAbbreviations         = defaultAbbrevs
-  , readerDefaultImageExtension = ""
-  , readerTrackChanges          = AcceptChanges -- definitely not relevant
-  , readerStripComments         = False
-  }
+readOptions = def
 
 -- | Options for the HTML writer for each article
 -- We change at least the math format (@writerHTMLMathMethod@) and add support
