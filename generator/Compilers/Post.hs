@@ -18,9 +18,6 @@ module Compilers.Post
 
 import Control.Applicative (empty)
 
-import qualified Data.Set as Set
-import qualified Data.Text as Text
-
 import Hakyll
 import Text.Pandoc
 
