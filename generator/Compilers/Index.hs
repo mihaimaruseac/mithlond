@@ -17,7 +17,6 @@ module Compilers.Index
 
 import Data.List (sortOn)
 import Data.Maybe (catMaybes)
-
 import Hakyll
 
 import Compilers.Post (postContext)

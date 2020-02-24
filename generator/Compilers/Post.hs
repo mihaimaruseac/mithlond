@@ -17,7 +17,6 @@ module Compilers.Post
   ) where
 
 import Control.Applicative (empty)
-
 import Hakyll
 
 postCompiler :: Compiler (Item String)
