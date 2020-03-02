@@ -5,3 +5,5 @@
 _site/
 _cache/
 stack.yaml.lock
+# Remove these later
+old.cp.rm/
