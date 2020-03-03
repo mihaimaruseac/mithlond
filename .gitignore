@@ -7,3 +7,4 @@ _cache/
 stack.yaml.lock
 # Remove these later
 old.cp.rm/
+work
