@@ -6,7 +6,4 @@ _site/
 _cache/
 stack.yaml.lock
 # Remove these later
-old.cp.rm/
-work
-_old_index.html
-_old_posts/
+old.rm
