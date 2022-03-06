@@ -6,4 +6,4 @@ _site/
 _cache/
 stack.yaml.lock
 # Remove these later
-old.rm
+not_in_repo
