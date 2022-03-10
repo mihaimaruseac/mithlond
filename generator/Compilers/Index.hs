@@ -1,7 +1,7 @@
 {-|
 Module: Compilers.Index
 Description: Definitions and compiler for the index page
-Copyright: (c) Mihai Maruseac 2020
+Copyright: (c) Mihai Maruseac 2022
 Stability: experimental
 Portability: POSIX
 

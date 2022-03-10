@@ -1,7 +1,7 @@
 {-|
 Module: Compilers.Post
 Description: Definitions and compiler for posts
-Copyright: (c) Mihai Maruseac 2020
+Copyright: (c) Mihai Maruseac 2022
 Stability: experimental
 Portability: POSIX
 
