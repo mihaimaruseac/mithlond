@@ -31,5 +31,5 @@ executable site
     , containers >= 0.6.4.1 && < 0.7
     , hakyll >= 4.15.1.0 && < 4.16
     , pandoc >= 2.17.1.1 && < 2.18
-    , skylighting >= 0.10.5.2 && < 0.11
+    , skylighting >= 0.12.3 && < 0.13
     , text >= 1.2.4.1 && < 1.3
