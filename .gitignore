@@ -10,4 +10,4 @@ _cache/
 # We don't keep this in the repo for now
 content/
 # Remove these later
-not_in_repo
+not_in_repo/
