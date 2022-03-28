@@ -17,16 +17,16 @@ module Patterns where
 import Hakyll
 
 patternIndex :: Pattern
-patternIndex = "index.html"
+patternIndex = "content/index.html"
 
 patternPosts :: Pattern
-patternPosts = fromRegex "^posts/-?[0-9]+/.*\\.md$"
+patternPosts = fromRegex "content/posts/-?[0-9]+/.*\\.md$"
 
 patternTemplates :: Pattern
-patternTemplates = "templates/*"
+patternTemplates = "content/templates/*"
 
 patternCSS :: Pattern
-patternCSS = "css/*"
+patternCSS = "content/css/*"
 
 patternFonts :: Pattern
-patternFonts = "fonts/*.woff"
+patternFonts = "content/fonts/*.woff"
